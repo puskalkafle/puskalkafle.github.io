@@ -1,0 +1,28 @@
+ul, li {
+  margin: 0;
+  list-style-type: none; }
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+a.active {
+  color: blue;
+  background: lightblue; }
+
+nav {
+  padding: 20px;
+  background: lightblue; }
+
+#logo img {
+  width: 60px; }
+
+.menu {
+  float: right; }
+  .menu .menu-item {
+    float: left; }
+    .menu .menu-item:not(:last-child) {
+      padding-right: 10px; }
