@@ -15,6 +15,7 @@ body {
   -webkite-box-sizing: border-box;
   -ms-box-sizing: border-box; }
   .container > .inner {
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkite-box-sizing: border-box;
     -ms-box-sizing: border-box;
