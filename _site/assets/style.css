@@ -5,6 +5,9 @@ ul, li {
 a, a:hover {
   text-decoration: none; }
 
+a {
+  color: #424242; }
+
 body {
   background: darkgray; }
 
