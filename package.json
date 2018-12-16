@@ -1,0 +1,23 @@
+{
+  "name": "puskalkafle.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d puskal/dist/puskal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puskalkafle/puskalkafle.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puskalkafle/puskalkafle.github.io/issues"
+  },
+  "homepage": "https://puskalkafle.github.io/",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
