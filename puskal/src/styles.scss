@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import './assets/variables';
+
+body{
+  font-family: 'Oxygen', sans-serif;
+}
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a{
+  color:  #707070;
+}
+.container,.header-nav{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+}
+.header-nav{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.header-nav{
+  padding: 20px 0;
+}
+.header-nav > ul{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+.header-nav > ul a{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+.header-nav > ul a.active{
+  color: #4F82BF;
+}
+#logo{
+  background: url("./assets/logo.svg") no-repeat;
+  width: 25px;
+  height: 41px;
+  display: inline-block;
+}
+
+.big-btn{
+  padding: 10px 20px;
+  background: $color2;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translateY(-50%);
+  display: inline-block;
+}
