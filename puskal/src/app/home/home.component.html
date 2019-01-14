@@ -18,5 +18,14 @@
 <section class="section works">
   <div class="container">
     <a class="big-btn">WORK & SKILLS</a>
+    <form class="work_option">
+      <input type="radio" id="works1" name="radio-group" checked>
+      <label for="works1">Show All</label>
+      <input type="radio" id="works2" name="radio-group">
+      <label for="works2">Only Design</label>
+      <input type="radio" id="works3" name="radio-group">
+      <label for="works3">Only Development</label>
+    </form>
+    <app-work-list></app-work-list>
   </div>
 </section>

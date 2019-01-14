@@ -39,7 +39,7 @@ a{
   text-decoration: none;
 }
 .header-nav > ul a.active{
-  color: #4F82BF;
+  color: $color1;
 }
 #logo{
   background: url("./assets/logo.svg") no-repeat;

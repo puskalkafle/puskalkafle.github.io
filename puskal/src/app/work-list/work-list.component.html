@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let work of works;  let i=index">
+  <div *ngIf="i < limitResult">
+  {{ work.name  }}
+  </div>
+</li>
+
+</ul>
+<button (click)='loadMore()'>Load More</button>
