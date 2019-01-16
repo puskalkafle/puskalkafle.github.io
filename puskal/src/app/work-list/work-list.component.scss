@@ -1,0 +1,43 @@
+$negative-margin-textbox:-40px;
+.work-img{
+  width: 449px;
+  height: 468px;
+}
+.work-details{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.work-info{
+  background: rgba(255, 255, 255, 0.8);
+  width: 576px;
+  height: 237px;
+  align-self: center;
+  margin-left: $negative-margin-textbox;
+  z-index: 1;
+  padding: 20px;
+  border: 1px solid rgba(214, 214, 214, 0.5);
+  text-align: right;
+  small{
+    color: #A2A2A2;
+    text-transform: uppercase;
+  }
+  h3{
+    font-size: 64px;
+    line-height: 1em;
+    margin: 0;
+  }
+}
+
+.even
+{
+  .work-details {
+    flex-flow: row-reverse nowrap;
+  }
+  .work-info{
+    text-align: left;
+    margin-left: 0;
+    margin-right: $negative-margin-textbox;
+  }
+}
+
