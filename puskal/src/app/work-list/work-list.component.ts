@@ -35,7 +35,6 @@ export class WorkListComponent implements OnInit {
 
     loadMore() {
         this.limitResult = this.limitResult + 1;
-        console.log(this.limitResult);
     }
 
     setUserOption(option) {
@@ -43,11 +42,10 @@ export class WorkListComponent implements OnInit {
         if (option != "all") {
             result = this.works.filter(i => i.slug == option);
         } else {
-            // this.setWorkData();
             result = this.works;
         }
-        console.log(option);
-     this.show_works = result;
+        this.show_works = result;
+        this.limitResult = 2;
 
     }
 

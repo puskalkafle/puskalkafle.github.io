@@ -5,6 +5,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WorkService } from './work.service';
 import { WorkListComponent } from './work-list/work-list.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { WorkListComponent } from './work-list/work-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    OwlModule
   ],
   providers: [WorkService],
   bootstrap: [AppComponent]
