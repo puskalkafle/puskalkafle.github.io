@@ -9,7 +9,7 @@ import { WorkListComponent} from '../work-list/work-list.component';
 
 export class HomeComponent implements OnInit {
   @ViewChild(WorkListComponent)
-  private worklistcomponent:WorkListComponent;
+  public worklistcomponent:WorkListComponent;
 
   constructor() {
 
