@@ -1,15 +1,23 @@
 <ul>
-  <li  *ngFor="let work of works;  let i=index" [className]="((i-1) % 2==0) ? 'even' : 'odd'">
-    <div *ngIf="i < limitResult" ngClass="work-details">
+  <li  *ngFor="let work of show_works;  let i=index" [className]="((i-1) % 2==0) ? 'even' : 'odd'">
+    <div *ngIf="(i < limitResult) && (showAll == true); else filterBlock"  ngClass="work-details">
       <div ngClass="work-img" [ngStyle]="{background: 'url(assets/' + work.img + ')','background-size':'cover'}"></div>
       <div ngClass="work-info">
       <small>{{ work.type}}</small>
-      <h3>
-        {{ work.title}}
-      </h3>
+      <h3>{{work.title}}</h3>
       <p>{{work.desc}}</p>
       </div>
     </div>
+    <ng-template #filterBlock>
+      <div *ngIf="(i < limitResult) && (work.type == userOption)"  ngClass="work-details">
+      <div ngClass="work-img" [ngStyle]="{background: 'url(assets/' + work.img + ')','background-size':'cover'}"></div>
+      <div ngClass="work-info">
+        <small>{{work.type}}</small>
+        <h3>{{work.title}}</h3>
+        <p>{{work.desc}}</p>
+      </div>
+      </div>
+    </ng-template>
   </li>
 </ul>
 
