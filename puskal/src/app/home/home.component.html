@@ -32,6 +32,32 @@
 <section class="section arts">
   <div class="container">
     <h2 class="title">Arts</h2>
+    <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'arts-slider']" >
+      <div class="item" *ngFor="let image of mySlideImages;let i = index">
+          <img src={{image}}/>
+      </div>
+    </owl-carousel>
   </div>
+</section>
+<section class="section tag-cloud">
+  <div class="container">
+    <h2 class="title">I Know</h2>
+    <div>
+      <angular-tag-cloud
+              [data]="data"
+              [width]="options.width"
+              [height]="options.height"
+              [overflow]="options.overflow">
+      </angular-tag-cloud>
+    </div>
+  </div>
+</section>
+<section class="bottom-img">
 
 </section>
+
+<footer class="footer">
+<div class="container">
+footer
+</div>
+</footer>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WorkService } from './work.service';
 import { WorkListComponent } from './work-list/work-list.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { TagCloudModule } from 'angular-tag-cloud-module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    OwlModule
+    OwlModule,
+    TagCloudModule
   ],
   providers: [WorkService],
   bootstrap: [AppComponent]

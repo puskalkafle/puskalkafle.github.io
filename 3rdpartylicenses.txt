@@ -300,6 +300,9 @@ MIT
 @angular/router
 MIT
 
+angular-tag-cloud-module
+MIT
+
 @angular/core
 MIT
 
