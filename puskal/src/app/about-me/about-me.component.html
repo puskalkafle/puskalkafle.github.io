@@ -1,3 +1,77 @@
-<p>
-  about-me works!
-</p>
+<app-header></app-header>
+<section class="banner about-me">
+  <div class="container">
+    <div class="col user-image"></div>
+    <div class="col user-info">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, in nihil enim harum ipsa rem ea, assumenda amet autem aliquid ut iusto! Totam accusamus perspiciatis omnis quia ea. Recusandae, sit.Quas quod est beatae corporis magni mollitia illo illum sit aliquid itaque non nulla laudantium deserunt eligendi, possimus unde sapiente dolorum facere rem cumque, nesciunt qui expedita rerum! Id, doloremque?
+    </div>
+  </div>
+</section>
+<section class="section photo-gallery">
+  <div class="container">
+    <h2 class="title">Arts</h2>
+    <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
+      <div class="item" *ngFor="let image of mySlideImages;let i = index">
+          <img src={{image}}/>
+      </div>
+    </owl-carousel>
+  </div>
+</section>
+<section class="section my-skills">
+  <div class="container">
+    <h2 class="title">My Skills</h2>
+    <canvas baseChart
+    [data]="pieChartData"
+    [labels]="pieChartLabels"
+    [colors]="barCharColors"
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</section>
+<section class="section thumbnail-item books">
+  <div class="container">
+    <h2 class="title">Books that I like</h2>
+    <ul>
+      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+    </ul>
+  </div>
+</section>
+<section class="section thumbnail-item movies">
+    <div class="container">
+      <h2 class="title">Movies that I like</h2>
+      <ul>
+        <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+        <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+        <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+        <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+      </ul>
+    </div>
+  </section>
+<section class="section certificates">
+    <div class="container">
+      <h2 class="title">Accomplishments</h2>
+      <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
+          <div class="item" *ngFor="let image of mySlideImages;let i = index">
+              <!-- <img src={{image}}/> -->
+              <a href="#"><img src="../../assets/certificate.jpg">
+              <span class="certificate-label">Fundamentals of Graphic Design</span>
+              </a>
+          </div>
+        </owl-carousel>
+    </div>
+  </section>
+  <section class="bottom-img">
+    <div class="container">
+        <div class="content">
+            <p>Imagination is more important than knowledge.</p>
+            <span><b>Albert Einstein</b></span>
+          </div>
+    </div>
+ 
+    </section>
+    <app-footer></app-footer>

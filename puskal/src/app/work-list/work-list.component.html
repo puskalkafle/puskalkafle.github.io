@@ -22,5 +22,5 @@
 </ul>
 
 <div ngClass="load-more-wrap">
-<button ngClass="btn btn-line" (click)='loadMore()'>LOAD MORE</button>
+<button [ngClass]="{'disabled' : loadmore_disable}" class="btn btn-line"  (click)='loadMore()'>LOAD MORE</button>
 </div>

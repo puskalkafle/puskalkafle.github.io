@@ -1,0 +1,102 @@
+.banner{
+    padding: 100px 0 50px 0;
+    background: #1E233C;
+    background-size: contain;
+    color: #ffffff;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .user-image{
+        background: url('../../assets/man.jpg') center;
+        background-size: cover;
+    }
+    .col{
+        height: 500px;
+        width: 50%;
+        &:first-child{
+            margin-right: 15px;
+        }
+        &:last-child{
+            margin-left: 15px;
+            font-size: 22px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.thumbnail-item{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            width: 25%;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: 100%;
+            }
+        
+        }
+    }
+}
+
+.bottom-img{
+    background: url("../../assets/think.jpeg") no-repeat center;
+    height: 522px;
+    background-size: cover;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    }
+    .container{
+        position: relative;
+    }
+    .content{
+        width: 443px;
+        height: 243px;
+        position: absolute;
+        right: 0;
+        top: 150px;
+        text-align: center;
+        font-style: italic;
+        font-size: 28px;
+        color: #695136;
+        p{
+            margin: 0;
+            line-height: 1em;
+        }
+        span{
+            font-size: 22px;
+        }
+
+    }
+  }
+
+  .certificates .item a{position:relative;display: block;}
+
+.certificate-label{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 12px;
+    display: block;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 5px 0;
+}

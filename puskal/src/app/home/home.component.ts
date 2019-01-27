@@ -1,5 +1,5 @@
-import { Component, OnInit,Directive, Input, ViewChild } from '@angular/core';
-import { WorkListComponent} from '../work-list/work-list.component';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { WorkListComponent } from '../work-list/work-list.component';
 import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 
 @Component({
@@ -10,14 +10,14 @@ import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 
 export class HomeComponent implements OnInit {
   @ViewChild(WorkListComponent)
-  public worklistcomponent:WorkListComponent;
-  getDate = 0;
-  public mySlideImages = [1,2,3,4,5,6].map((i)=> `https://picsum.photos/640/480?image=${i}`);
-  public mySlideOptions={items: 3, dots: false, nav: true, margin:10};
+  public worklistcomponent: WorkListComponent;
+
+  public mySlideImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
+  public mySlideOptions = { items: 3, dots: false, nav: true, margin: 10 };
 
   options: CloudOptions = {
-    width : 1000,
-    height : 400,
+    width: 1000,
+    height: 400,
     overflow: false,
   };
 
@@ -29,8 +29,6 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor() {
-    var date = new Date();
-    this.getDate = date.getFullYear();
   }
 
   ngOnInit() {

@@ -7,20 +7,26 @@ import { WorkService } from './work.service';
 import { WorkListComponent } from './work-list/work-list.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { TagCloudModule } from 'angular-tag-cloud-module';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    WorkListComponent
+    WorkListComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     OwlModule,
-    TagCloudModule
+    TagCloudModule,
+    ChartsModule
   ],
   providers: [WorkService],
   bootstrap: [AppComponent]
