@@ -71,9 +71,18 @@
 
 .img-container .img-item{
   height: 424px;
-  background: url("../../assets/man.jpg") center;
-  background-size: cover;
-
+  &.image-item1{
+    background: url("../../assets/work/3277cf8881383.562bac20e3087.jpg") center;
+    background-size: cover;
+  }
+  &.image-item2{
+    background: url("../../assets/work/Dog_DIGITAL-PAINTING.jpg") center;
+    background-size: cover;
+  }
+  &.image-item3{
+    background: url("../../assets/work/HomeDesktopHD.jpg") top;
+    background-size: cover;
+  }
 }
 .img-container {
 span{
