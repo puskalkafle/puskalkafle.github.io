@@ -35,7 +35,7 @@
     <h2 class="title">Arts</h2>
     <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'arts-slider']" >
       <div class="item" *ngFor="let image of mySlideImages;let i = index">
-          <img src={{image}}/>
+          <div [style.background]="'url(' + image+ ')'" [style.background-size]="'100%'" [style.background-repeat]="'no-repeat'" [ngStyle]="{'height':'300px'}"></div>
       </div>
     </owl-carousel>
   </div>
