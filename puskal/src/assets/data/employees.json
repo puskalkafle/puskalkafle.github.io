@@ -1,7 +1,4 @@
 [
     {"slug": "development","type": "Web Development", "title": "Frostar Themes", "desc": "Frostar Theme was build to sale premium WordPress themes.", "img": "work/HomeDesktopHD.jpg"},
-    {"slug": "development","type": "Web Development", "title": "Brandon", "desc": "desc2", "img": "man.jpg"},
-    {"slug": "design","type": "Design", "title": "Christina", "desc": "desc3", "img": "man.jpg"},
-    {"slug": "development","type": "Web Development", "title": "Elena", "desc": "desc4", "img": "man.jpg"},
-    {"slug": "development","type": "Web Development", "title": "Felicia", "desc": "desc5", "img": "man.jpg"}
+    {"slug": "design","type": "Design", "title": "Bit Roshi", "desc": "Static desgin for Bit Roshi client.", "img": "work/Company_Active.jpg"}
 ]

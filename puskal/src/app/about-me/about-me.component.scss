@@ -3,13 +3,16 @@
     background: #1E233C;
     background-size: contain;
     color: #ffffff;
+    small{
+        font-size: 12px;
+    }
     .container{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     .user-image{
-        background: url('../../assets/man.jpg') center;
+        background: url('../../assets/IMG_2704.JPG') center;
         background-size: cover;
     }
     .col{
