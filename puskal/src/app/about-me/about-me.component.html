@@ -11,7 +11,7 @@
 </section>
 <section class="section photo-gallery">
   <div class="container">
-    <h2 class="title">Arts</h2>
+    <h2 class="title">Photo Gallery</h2>
     <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
       <div class="item" *ngFor="let image of mySlideImages;let i = index">
           <img src={{image}}/>
@@ -23,11 +23,11 @@
   <div class="container">
     <h2 class="title">My Skills</h2>
     <canvas baseChart
-    [data]="pieChartData"
-    [labels]="pieChartLabels"
-    [colors]="barCharColors"
-    [chartType]="pieChartType"
-    [options]="pieChartOptions"
+    [data]="ChartData"
+    [labels]="ChartLabels"
+    [colors]="CharColors"
+    [chartType]="ChartType"
+    [options]="ChartOptions" 
     (chartHover)="chartHovered($event)"
     (chartClick)="chartClicked($event)"></canvas>
   </div>
@@ -36,10 +36,10 @@
   <div class="container">
     <h2 class="title">Books that I like</h2>
     <ul>
-      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
-      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
-      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
-      <li><img src="../../assets/grave_of_fireflies.jpg"></li>
+      <li><img src="../../assets/books/kaizenway.jpg"></li>
+      <li><img src="../../assets/books/thinknadgrowrich.jpg"></li>
+      <li><img src="../../assets/books/night.jpg"></li>
+      <li><img src="../../assets/books/steallikeanartist.jpg"></li>
     </ul>
   </div>
 </section>

@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     'assets/work/blame-it.jpg', 
     'assets/work/Dog_DIGITAL-PAINTING.jpg' 
   ];
-  public mySlideOptions = { items: 3, dots: false, nav: true, margin: 10 };
+  public mySlideOptions = { items: 3, dots: true, nav: false, margin: 10 };
 
   options: CloudOptions = {
     width: 1000,

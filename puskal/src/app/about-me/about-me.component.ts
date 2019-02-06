@@ -10,8 +10,8 @@ export class AboutMeComponent implements OnInit {
   public mySlideOptions = { items: 5, dots: false, nav: true, margin: 10 };
 
   title = 'app';
-  public pieChartLabels: string[] = ["Pending", "InProgress", "OnHold", "Complete", "Cancelled"];
-  public barCharColors: Array<any> = [
+  public ChartLabels: string[] = ["JavaScript", "UI/UX", "CSS/CSS3", "PHP", "Adobe Photoshop", "Adobe Illustrator", "Adobe XD"];
+  public CharColors: Array<any> = [
     { // grey
       backgroundColor: 'rgba(79,130,191,.2)',
       borderColor: 'rgba(148,159,177,1)'
@@ -33,17 +33,21 @@ export class AboutMeComponent implements OnInit {
       borderColor: 'rgba(148,159,177,1)'
     }
   ];
-  public pieChartData: number[] = [21, 39, 50, 14, 16];
-  public pieChartType: string = 'bar';
+  public ChartData: number[] = [70, 80, 90, 50, 80, 60, 80];
+  public ChartType: string = 'bar';
 
-  public pieChartOptions: any = {
-    'backgroundColor': [
-      "#FF6384",
-      "#4BC0C0",
-      "#FFCE56",
-      "#E7E9ED",
-      "#36A2EB"
-    ]
+  public ChartOptions: any = {
+    // 'backgroundColor': [
+    //   "#FF6384",
+    //   "#4BC0C0",
+    //   "#FFCE56",
+    //   "#E7E9ED",
+    //   "#36A2EB"
+    // ],
+    'scaleOverride' : true,
+    'scaleSteps' : 10,
+    'scaleStepWidth' : 500,
+    'scaleStartValue' : 0
   }
   // events on slice click
   public chartClicked(e: any): void {
