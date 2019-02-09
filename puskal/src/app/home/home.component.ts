@@ -41,9 +41,11 @@ export class HomeComponent implements OnInit {
     { text: 'Ionic', weight: 8,color:'#324b73' },  
     { text: 'Adobe Illustrator', weight: 8,color:'#324b73' },
     { text: 'HTML5', weight: 7 ,color:'#2d3f63'},
+    { text: 'PHP', weight: 7 ,color:'#2d3f63'},
     { text: 'Vector Art', weight: 7 ,color:'#2d3f63'},
     { text: 'Digital Painting', weight: 7 ,color:'#2d3f63'},
-    { text: 'D3', weight: 6 ,color:'#232c49'}
+    { text: 'D3', weight: 6 ,color:'#232c49'},
+    { text: 'MySQL', weight: 6 ,color:'#232c49'}
   ];
 
   constructor() {

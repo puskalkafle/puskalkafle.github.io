@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-about-me',
@@ -37,17 +38,10 @@ export class AboutMeComponent implements OnInit {
   public ChartType: string = 'bar';
 
   public ChartOptions: any = {
-    // 'backgroundColor': [
-    //   "#FF6384",
-    //   "#4BC0C0",
-    //   "#FFCE56",
-    //   "#E7E9ED",
-    //   "#36A2EB"
-    // ],
-    'scaleOverride' : true,
-    'scaleSteps' : 10,
-    'scaleStepWidth' : 500,
-    'scaleStartValue' : 0
+    'scaleOverride': true,
+    'scaleSteps': 10,
+    'scaleStepWidth': 500,
+    'scaleStartValue': 0
   }
   // events on slice click
   public chartClicked(e: any): void {
@@ -58,9 +52,57 @@ export class AboutMeComponent implements OnInit {
   public chartHovered(e: any): void {
     console.log(e);
   }
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
+
+  }
+  initSvg() {
+    const colors = ['#3e4150', '#1b53a8', '#4F82BF'];
+    const numLines = 3;
+    let currCount = numLines;
+    const texts = $("#textClip text");
+    const blobs = $("#background path");
+
+    function colorBlobs() {
+      blobs.each(function (i, x) {
+        x.style.fill = colors[Math.floor(Math.random() * colors.length)];
+      });
+
+    }
+
+    function nextIteration() {
+      // Change the color of all the blobs
+      colorBlobs();
+
+      // Hide the old set of lines
+      let startVal = currCount - numLines;
+      if (startVal < 0) {
+        startVal = texts.length - numLines;
+      }
+      for (let i = startVal; i < startVal + numLines; i++) {
+        texts[i].style.display = "none";
+      }
+      // Show new set of lines
+      for (let j = currCount; j < currCount + numLines; j++) {
+        texts[j].style.display = "inline";
+      }
+      currCount += numLines;
+      if (currCount >= texts.length) {
+        currCount = 0;
+      }
+    }
+
+    // Since all of our blobs are using the same animation, we only
+    // need to listen to one of them
+    blobs[0].addEventListener("animationiteration", nextIteration);
+
+    colorBlobs();
+
   }
 
+  ngOnInit() {
+    this.initSvg();
+
+
+  }
 }

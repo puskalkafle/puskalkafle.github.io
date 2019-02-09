@@ -1,3 +1,5 @@
+@import '../../assets/variables';
+
 .banner{
     padding: 100px 0 50px 0;
     background: #1E233C;
@@ -34,8 +36,14 @@
         display: flex;
         justify-content: space-between;
         li{
-            width: 25%;
+            width: 20%;
             margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
             &:last-child{
                 margin-right: 0;
             }
@@ -102,4 +110,47 @@
     background: rgba(0,0,0,.5);
     color: #fff;
     padding: 5px 0;
+}
+.big-text{
+    color: $color1;
+    font-weight: bold;
+    font-size: 72px;
+}
+.user-info p{
+    margin-top: 0;
+    line-height: 1.5em;
+    font-weight: lighter;
+    a{
+        color: $color1;
+    }
+}
+//Svg Design Starts
+
+.about-me {
+    svg {
+        width: 100%;
+    }
+    .filled-heading {
+        text-transform: uppercase;
+        font-size: 4em;
+        line-height: 0.9;
+        font-weight: bold;
+    }
+    
+    #background path {
+        animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+    #textClip text {
+        display: none;
+    }
+    #textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
+        display: inline;
+    }
+    
+    @keyframes pulse {
+        0%, 100% { transform: scale(0) rotate(33deg); }
+        35%, 65% { transform: scale(1) rotate(0deg); }
+    }
 }
