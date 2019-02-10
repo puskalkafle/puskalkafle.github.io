@@ -8,7 +8,15 @@ import * as $ from 'jquery';
 })
 export class AboutMeComponent implements OnInit {
   public mySlideImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
-  public mySlideOptions = { items: 5, dots: false, nav: true, margin: 10 };
+  public mySlideAccomplishment =
+    [
+    {'url':'HZR7KWU4ZXDL','title':'UX Design Fundamentals'},
+    {'url':'8ZEA4F246KSS','title':'Visual Elements of User Interface Design'},
+    {'url':'LP2LDWLZJ7VC','title':'Prototyping and Design'},
+    {'url':'FB7AEF2BMVC2','title':'User Research and Design'},
+    {'url':'GHRMCEBMKNTP','title':'Introduction to UI Design'}
+    ].map((item) => ({'url':`https://www.coursera.org/account/accomplishments/verify/${item.url}`,'title':item.title}));
+  public mySlideOptions = { items: 5, dots: true, nav: false, margin: 10 };
 
   title = 'app';
   public ChartLabels: string[] = ["JavaScript", "UI/UX", "CSS/CSS3", "PHP", "Adobe Photoshop", "Adobe Illustrator", "Adobe XD"];
