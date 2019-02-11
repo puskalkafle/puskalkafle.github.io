@@ -84,43 +84,46 @@
     </div>
   </div>
 </section>
-<section class="section photo-gallery">
+<section class="section skills_and_social">
   <div class="container">
-    <h2 class="title">Photo Gallery</h2>
-    <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
-      <div class="item" *ngFor="let image of mySlideImages;let i = index">
-          <img src={{image}}/>
+    <div class="col-2">
+        <h2 class="title">My Skills</h2>
+        <canvas baseChart
+        [data]="ChartData"
+        [labels]="ChartLabels"
+        [colors]="CharColors"
+        [chartType]="ChartType"
+        [options]="ChartOptions" 
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <div class="col-2">
+      <div class="twitter-wrapper">
+        <a class="twitter-timeline" data-width="280" data-height="500" href="https://twitter.com/Puskal?ref_src=twsrc%5Etfw"></a> 
+        
       </div>
-    </owl-carousel>
-  </div>
-</section>
-<section class="section my-skills">
-  <div class="container">
-    <h2 class="title">My Skills</h2>
-    <canvas baseChart
-    [data]="ChartData"
-    [labels]="ChartLabels"
-    [colors]="CharColors"
-    [chartType]="ChartType"
-    [options]="ChartOptions" 
-    (chartHover)="chartHovered($event)"
-    (chartClick)="chartClicked($event)"></canvas>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    
   </div>
 </section>
 <section class="section thumbnail-item books">
   <div class="container">
-    <h2 class="title">Books that I like</h2>
-    <ul>
-      <li><img src="../../assets/books/kaizenway.jpg"></li>
-      <li><img src="../../assets/books/thinknadgrowrich.jpg"></li>
-      <li><img src="../../assets/books/night.jpg"></li>
-      <li><img src="../../assets/books/steallikeanartist.jpg"></li>
-      <li><img src="../../assets/books/designingwithmindinmind.jpg"></li>
-    </ul>
+    <div class="col-2">
+        <h2 class="title">Books that I like</h2>
+        <ul>
+          <li><img src="../../assets/books/kaizenway.jpg"></li>
+          <li><img src="../../assets/books/thinknadgrowrich.jpg"></li>
+          <li><img src="../../assets/books/night.jpg"></li>
+          <li><img src="../../assets/books/steallikeanartist.jpg"></li>
+          <li><img src="../../assets/books/designingwithmindinmind.jpg"></li>
+        </ul>
+    </div>
   </div>
 </section>
 <section class="section thumbnail-item movies">
     <div class="container">
+        <div class="col-2">
       <h2 class="title">Movies that I like</h2>
       <ul>
         <li><img src="../../assets/movies/graveoffireflies.jpg"></li>
@@ -130,9 +133,11 @@
         <li><img src="../../assets/movies/scarface.jpg"></li>
       </ul>
     </div>
+    </div>
   </section>
 <section class="section certificates">
     <div class="container">
+        <div class="col-2">
       <h2 class="title">Accomplishments</h2>
       <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
           <div class="item" *ngFor="let item of mySlideAccomplishment;let i = index">
@@ -141,6 +146,7 @@
               </a>
           </div>
         </owl-carousel>
+    </div>
     </div>
   </section>
   <section class="bottom-img">

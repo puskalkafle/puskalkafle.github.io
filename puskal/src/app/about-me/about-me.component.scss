@@ -124,6 +124,40 @@
         color: $color1;
     }
 }
+.skills_and_social{
+    .container{
+        // display: flex;
+        // align-items: stretch;
+        .col-2{
+            // width: 50%;
+            &:last-child{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+.section{
+    .container{
+        display: flex;
+        align-items: stretch;
+        .col-2:first-child{
+            width: 70%;
+        }
+        }
+        &.certificates{
+            .container{
+        
+                .col-2:first-child{
+                    width: 100%;
+                }
+                }
+        }
+}
+.twitter-wrapper{
+    margin-top: 12px;
+}
+
 //Svg Design Starts
 
 .about-me {
