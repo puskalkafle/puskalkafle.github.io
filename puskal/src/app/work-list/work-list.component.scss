@@ -46,3 +46,18 @@ $negative-margin-textbox:-40px;
   padding-bottom: 150px;
 }
 
+#preview{
+  width: 480px;
+  position: fixed;
+  background: #fff;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  z-index: 999;
+  &.preview_hide{
+    display: none;
+  }
+  img{
+    width: 100%;
+  }
+}

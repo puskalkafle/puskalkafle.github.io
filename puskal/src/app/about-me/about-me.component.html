@@ -84,6 +84,20 @@
     </div>
   </div>
 </section>
+<section class="section certificates">
+  <div class="container">
+      <div class="col-2">
+    <h2 class="title">Accomplishments</h2>
+    <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
+        <div class="item" *ngFor="let item of mySlideAccomplishment;let i = index">
+            <a [href]="item.url" target="_blank"><img src="../../assets/certificate.jpg">
+            <span class="certificate-label">{{item.title}}</span>
+            </a>
+        </div>
+      </owl-carousel>
+  </div>
+  </div>
+</section>
 <section class="section skills_and_social">
   <div class="container">
     <div class="col-2">
@@ -135,20 +149,7 @@
     </div>
     </div>
   </section>
-<section class="section certificates">
-    <div class="container">
-        <div class="col-2">
-      <h2 class="title">Accomplishments</h2>
-      <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
-          <div class="item" *ngFor="let item of mySlideAccomplishment;let i = index">
-              <a [href]="item.url" target="_blank"><img src="../../assets/certificate.jpg">
-              <span class="certificate-label">{{item.title}}</span>
-              </a>
-          </div>
-        </owl-carousel>
-    </div>
-    </div>
-  </section>
+
   <section class="bottom-img">
     <div class="container">
         <div class="content">

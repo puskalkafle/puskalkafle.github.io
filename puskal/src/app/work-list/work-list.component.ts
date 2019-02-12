@@ -15,6 +15,8 @@ export class WorkListComponent implements OnInit {
     public userOption = 'Web Development';
     public showAll = true;
     public loadmore_disable = false;
+    public preview_url = '';
+    public preview_hide = true;
 
     constructor(private _workService: WorkService) {
 
@@ -57,6 +59,14 @@ export class WorkListComponent implements OnInit {
         this.setDisabledBtn();
 
 
+    }
+    preview(src){
+        this.preview_hide = false;
+        this.preview_url = 'assets/'+src;
+    }
+    hidepreview(){
+        this.preview_hide = true;
+        console.log(this.preview_hide);
     }
 
 }
