@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { WorkService } from './../work.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { WorkService } from './../work.service';
     styleUrls: ['./work-list.component.scss']
 })
 export class WorkListComponent implements OnInit {
+    @Output() preview_src = new EventEmitter<string>();
 
     public works = [];
     public show_works = [];
@@ -15,8 +16,7 @@ export class WorkListComponent implements OnInit {
     public userOption = 'Web Development';
     public showAll = true;
     public loadmore_disable = false;
-    public preview_url = '';
-    public preview_hide = true;
+
 
     constructor(private _workService: WorkService) {
 
@@ -61,12 +61,8 @@ export class WorkListComponent implements OnInit {
 
     }
     preview(src){
-        this.preview_hide = false;
-        this.preview_url = 'assets/'+src;
+        this.preview_src.emit(src);
     }
-    hidepreview(){
-        this.preview_hide = true;
-        console.log(this.preview_hide);
-    }
+
 
 }

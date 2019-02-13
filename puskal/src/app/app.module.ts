@@ -10,6 +10,7 @@ import { TagCloudModule } from 'angular-tag-cloud-module';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { OverlayComponent } from './overlay/overlay.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     routingComponents,
     WorkListComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    OverlayComponent
   ],
   imports: [
     BrowserModule,

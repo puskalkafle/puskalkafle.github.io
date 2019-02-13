@@ -1,0 +1,30 @@
+#preview{
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    cursor: pointer;
+    overflow: auto;
+    &:before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 98;
+    }
+    &.preview_hide{
+      display: none;
+    }
+    img{
+      position: relative;
+      width: 480px;
+      z-index: 999;
+      background: #fff;
+      left: 50%;
+      top: 5%;
+      transform: translateX(-50%);
+    }
+  }

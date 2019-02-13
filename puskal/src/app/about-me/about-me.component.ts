@@ -11,6 +11,7 @@ export class AboutMeComponent implements OnInit {
   public mySlideAccomplishment =
     [
       { 'url': '5JG8H7G6RULP', 'title': 'Graphic Design Specializations', 'type': 'specialization' },
+      { 'url': 'EJCRHLPNYBNQ', 'title': 'Web Design: Strategy and Information Architecture', 'type': 'course' },
       { 'url': 'HZR7KWU4ZXDL', 'title': 'UX Design Fundamentals', 'type': 'course' },
       { 'url': '8ZEA4F246KSS', 'title': 'Visual Elements of User Interface Design', 'type': 'course' },
       { 'url': 'LP2LDWLZJ7VC', 'title': 'Prototyping and Design', 'type': 'course' },

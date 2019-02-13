@@ -27,7 +27,7 @@
       <input type="radio" id="works3" name="radio-group" (click)='worklistcomponent.setUserOption("development")'>
       <label for="works3">Only Development</label>
     </form>
-    <app-work-list></app-work-list>
+    <app-work-list (preview_src)="callPreview($event)"></app-work-list>
   </div>
 </section>
 <section class="section arts">
@@ -35,7 +35,7 @@
     <h2 class="title">Arts</h2>
     <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'arts-slider']" >
       <div class="item" *ngFor="let image of mySlideImages;let i = index">
-          <div [style.background]="'url(' + image+ ')'" [style.background-size]="'100%'" [style.background-repeat]="'no-repeat'" [ngStyle]="{'height':'300px'}"></div>
+          <div (click)='callPreview(image)' [style.background]="'url(assets/' + image+ ')'" [style.background-size]="'100%'" [style.background-repeat]="'no-repeat'" [ngStyle]="{'height':'300px'}"></div>
       </div>
     </owl-carousel>
   </div>
@@ -58,3 +58,4 @@
 </section>
 
 <app-footer></app-footer>
+<app-overlay></app-overlay>

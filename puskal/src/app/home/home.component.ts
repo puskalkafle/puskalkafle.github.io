@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { WorkListComponent } from '../work-list/work-list.component';
+import { OverlayComponent } from '../overlay/overlay.component';
 import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
-
+//Add say something section using firebase
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,17 +12,19 @@ import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 export class HomeComponent implements OnInit {
   @ViewChild(WorkListComponent)
   public worklistcomponent: WorkListComponent;
+  @ViewChild(OverlayComponent)
+  public overlaycomponent: OverlayComponent;
 
   public mySlideImages = [
-    'assets/work/NK_VA_FINAL.jpg', 
-    'assets/work/3277cf8881383.562bac20e3087.jpg', 
-    'assets/work/Slash_Tshirt.jpg', 
-    'assets/work/sky.jpg', 
-    'assets/work/till_i_m_gone_dp.jpg', 
-    'assets/work/tree_frog_digital_painting.jpg',
-    'assets/work/nk_new.jpg', 
-    'assets/work/blame-it.jpg', 
-    'assets/work/Dog_DIGITAL-PAINTING.jpg' 
+    'work/NK_VA_FINAL.jpg', 
+    'work/3277cf8881383.562bac20e3087.jpg', 
+    'work/Slash_Tshirt.jpg', 
+    'work/sky.jpg', 
+    'work/till_i_m_gone_dp.jpg', 
+    'work/tree_frog_digital_painting.jpg',
+    'work/nk_new.jpg', 
+    'work/blame-it.jpg', 
+    'work/Dog_DIGITAL-PAINTING.jpg' 
   ];
   public mySlideOptions = { items: 3, dots: true, nav: false, margin: 10 };
 
@@ -53,5 +56,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  callPreview(src){
+    console.log(src);
+    this.overlaycomponent.preview(src);
+  }
 }
