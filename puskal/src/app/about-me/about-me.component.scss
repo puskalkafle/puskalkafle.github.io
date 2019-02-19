@@ -56,10 +56,11 @@
 }
 
 .bottom-img{
-    background: url("../../assets/think.jpeg") no-repeat center;
-    height: 522px;
+    background: url("../../assets/think.jpeg") no-repeat 0% 35%;
+    height: 288px;
     background-size: cover;
     position: relative;
+    margin-top: 50px;
     &:before{
       content: '';
       position: absolute;
@@ -80,17 +81,19 @@
         height: 243px;
         position: absolute;
         right: 0;
-        top: 150px;
+        top: 30px;
         text-align: center;
         font-style: italic;
         font-size: 28px;
-        color: #695136;
+        color: #868686;
+        font-family: 'Playfair Display', serif;
         p{
             margin: 0;
             line-height: 1em;
         }
-        span{
+        &>span{
             font-size: 22px;
+            color: #c1c1c1;
         }
 
     }
@@ -186,5 +189,11 @@
     @keyframes pulse {
         0%, 100% { transform: scale(0) rotate(33deg); }
         35%, 65% { transform: scale(1) rotate(0deg); }
+    }
+}
+.title{
+    em{
+        font-family: 'Playfair Display', serif;
+        color: #cccccc;
     }
 }
