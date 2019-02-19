@@ -63,3 +63,7 @@ a{
 .owl-theme .owl-dots .owl-dot:hover span{
     background: $color1 !important;
 }
+
+.body.preview-box{
+  overflow: hidden;
+}
