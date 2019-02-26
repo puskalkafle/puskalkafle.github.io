@@ -133,6 +133,5 @@ export class AboutMeComponent implements OnInit {
   ngAfterViewInit() {
     $('#twitter-wjs').remove();
     this.loadTwitter();
-    console.log('after view init');
   }
 }

@@ -73,30 +73,8 @@
       background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
     }
-    .container{
-        position: relative;
-    }
-    .content{
-        width: 443px;
-        height: 243px;
-        position: absolute;
-        right: 0;
-        top: 30px;
-        text-align: center;
-        font-style: italic;
-        font-size: 28px;
-        color: #868686;
-        font-family: 'Playfair Display', serif;
-        p{
-            margin: 0;
-            line-height: 1em;
-        }
-        &>span{
-            font-size: 22px;
-            color: #c1c1c1;
-        }
 
-    }
+
   }
 
   .certificates .item a{position:relative;display: block;}
