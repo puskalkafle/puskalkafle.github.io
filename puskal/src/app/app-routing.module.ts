@@ -8,14 +8,14 @@ import { AboutMeComponent } from './about-me/about-me.component';
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
-  { path: '#home', component: HomeComponent },
-  { path: '#about-me',   component: AboutMeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about-me',   component: AboutMeComponent },
   { path: '**',   component: PageNotFoundComponent }
   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
