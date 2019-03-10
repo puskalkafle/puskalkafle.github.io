@@ -3,7 +3,13 @@ import { WorkListComponent } from '../work-list/work-list.component';
 import { OverlayComponent } from '../overlay/overlay.component';
 import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 import * as $ from 'jquery';
-//Add say something section using firebase
+
+//Please implement these information in next version
+//Add say something section using Firebase
+//Add astronomy related icons, background art or section
+//Redesign by taking inspirations
+//Follow Coursera method to design website
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
