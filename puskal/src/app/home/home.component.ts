@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 import { WorkListComponent } from '../work-list/work-list.component';
 import { OverlayComponent } from '../overlay/overlay.component';
 import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
+import * as $ from 'jquery';
 //Add say something section using firebase
 @Component({
   selector: 'app-home',
@@ -55,6 +56,14 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    let url = window.location.href;
+    let res = url.split("/");
+    if(parseInt(res[5]) === 1){
+      $('html, body').animate({
+        scrollTop: $("#work").offset().top - 35
+      }, 2000);
+    }
+
   }
   callPreview(src){
     console.log(src);

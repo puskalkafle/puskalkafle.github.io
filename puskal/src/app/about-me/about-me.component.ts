@@ -46,7 +46,7 @@ export class AboutMeComponent implements OnInit {
       borderColor: 'rgba(148,159,177,1)'
     }
   ];
-  public ChartData: number[] = [70, 80, 90, 50, 80, 60, 80];
+  public ChartData: number[] = [70, 80, 90, 60, 80, 60, 80];
   public ChartType: string = 'bar';
 
   public ChartOptions: any = {
