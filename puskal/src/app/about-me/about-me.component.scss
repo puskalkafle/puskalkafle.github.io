@@ -80,7 +80,7 @@
 
   }
 
-  .certificates .item a{position:relative;display: block;}
+.certificates .item a{position:relative;display: block;}
 
 .certificate-label{
     position:absolute;
@@ -104,6 +104,9 @@
     margin-top: 0;
     line-height: 1.5em;
     font-weight: lighter;
+    letter-spacing: 1px;
+    color: #d4dce6;
+    font-size: 20px;
     a{
         color: $color1;
     }

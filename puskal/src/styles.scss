@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 @import './assets/variables';
 
 body{
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul,li{
@@ -59,6 +60,7 @@ a{
   .title{
     border-bottom: 1px solid #d3d3d3;
     line-height: 1.5em;
+    color: #333;
   }
 }
 .owl-theme .owl-dots .owl-dot.active span, 
