@@ -1,7 +1,7 @@
 @import '../../assets/variables';
 
 .banner{
-    padding: 100px 0 50px 0;
+    padding: 100px 0 100px 0;
     background: #1E233C;
     background-size: contain;
     color: #ffffff;
@@ -9,24 +9,31 @@
         font-size: 12px;
     }
     .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: flex; flex-direction: row; justify-content: space-evenly; background: url(../../assets/IMG_2704.JPG) 35% 53% no-repeat; background-size: 50%;
     }
     .user-image{
-        background: url('../../assets/IMG_2704.JPG') center;
-        background-size: cover;
+
     }
     .col{
-        height: 500px;
-        width: 50%;
+        //height: 500px;
+        //width: 50%;
         &:first-child{
-            margin-right: 15px;
+            margin-right: 0;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            top: 73px;
         }
         &:last-child{
-            margin-left: 15px;
-            font-size: 22px;
-            margin-top: 50px;
+            font-size: 14px;
+            background: rgba(30, 35, 60, 0.8);
+            padding: 30px;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=38, Direction=0, Color=#000000)";/*IE 8*/
+            -moz-box-shadow: 0 0 38px 3px #000000;/*FF 3.5+*/
+            -webkit-box-shadow: 0 0 38px 3px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+            box-shadow: 0 0 38px 3px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+            filter: progid:DXImageTransform.Microsoft.Shadow(Strength=38, Direction=135, Color=#000000); /*IE 5.5-7*/
+
         }
     }
 }
@@ -106,7 +113,8 @@
     font-weight: lighter;
     letter-spacing: 1px;
     color: #d4dce6;
-    font-size: 20px;
+    font-size: 16px;
+    width: 340px;
     a{
         color: $color1;
     }
@@ -142,7 +150,7 @@
         }
 }
 .twitter-wrapper{
-    margin-top: 12px;
+    margin-top: 24px;
 }
 
 //Svg Design Starts

@@ -61,12 +61,12 @@ export class AboutMeComponent implements OnInit {
   }
   // events on slice click
   public chartClicked(e: any): void {
-    console.log(e);
+    // console.log(e);
   }
 
   // event on pie chart slice hover
   public chartHovered(e: any): void {
-    console.log(e);
+    // console.log(e);
   }
   constructor() {
 

@@ -102,6 +102,7 @@
   <div class="container">
     <div class="col-2">
         <h2 class="title">My Skills</h2>
+        <div style="width: 98%;">
         <canvas baseChart
         [data]="ChartData"
         [labels]="ChartLabels"
@@ -110,6 +111,7 @@
         [options]="ChartOptions" 
         (chartHover)="chartHovered($event)"
         (chartClick)="chartClicked($event)"></canvas>
+        </div>
     </div>
     <div class="col-2">
       <div class="twitter-wrapper">
