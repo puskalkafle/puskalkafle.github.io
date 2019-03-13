@@ -43,12 +43,14 @@ export class HomeComponent implements OnInit {
 
   data: CloudData[] = [
     { text: 'CSS3', weight: 13 ,color:'#4f81be'},
+    { text: 'Sass', weight: 10 ,color:'#4f81be'},
     { text: 'Adobe Photoshop', weight: 12,color:'#4773aa' },
     { text: 'Adobe XD', weight: 9,color:'#3c5e8d' },
     { text: 'UI/UX Design', weight: 9,color:'#3c5e8d' },
-    { text: 'JavaScript', weight: 8,color:'#324b73' },
+    { text: 'JavaScript', weight: 11,color:'#324b73' },
     { text: 'Angular', weight: 8,color:'#324b73' },
     { text: 'Ionic', weight: 8,color:'#324b73' },  
+    { text: 'WordPress', weight: 8,color:'#324b73' },
     { text: 'Adobe Illustrator', weight: 8,color:'#324b73' },
     { text: 'HTML5', weight: 7 ,color:'#2d3f63'},
     { text: 'PHP', weight: 7 ,color:'#2d3f63'},
