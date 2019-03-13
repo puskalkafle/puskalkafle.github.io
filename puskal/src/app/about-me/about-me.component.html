@@ -90,7 +90,8 @@
     <h2 class="title">Accomplishments</h2>
     <owl-carousel [options]="mySlideOptions"  [carouselClasses]="['owl-theme', 'photo-slider']" >
         <div class="item" *ngFor="let item of mySlideAccomplishment;let i = index">
-            <a [href]="item.url" target="_blank"><img src="../../assets/certificate.jpg">
+            <a [href]="item.url" target="_blank">
+                <img src="../../assets/{{item.uni}}.jpg">
             <span class="certificate-label">{{item.title}}</span>
             </a>
         </div>

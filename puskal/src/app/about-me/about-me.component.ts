@@ -7,20 +7,20 @@ import * as $ from 'jquery';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  public mySlideImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
+  // public mySlideImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
   public mySlideAccomplishment =
     [
-      { 'url': '5JG8H7G6RULP', 'title': 'Graphic Design Specializations', 'type': 'specialization' },
-      { 'url': 'EJCRHLPNYBNQ', 'title': 'Web Design: Strategy and Information Architecture', 'type': 'course' },
-      { 'url': 'HZR7KWU4ZXDL', 'title': 'UX Design Fundamentals', 'type': 'course' },
-      { 'url': '8ZEA4F246KSS', 'title': 'Visual Elements of User Interface Design', 'type': 'course' },
-      { 'url': 'LP2LDWLZJ7VC', 'title': 'Prototyping and Design', 'type': 'course' },
-      { 'url': 'FB7AEF2BMVC2', 'title': 'User Research and Design', 'type': 'course' },
-      { 'url': 'GHRMCEBMKNTP', 'title': 'Introduction to UI Design', 'type': 'course' }
+      { 'url': '5JG8H7G6RULP','uni':'cal', 'title': 'Graphic Design Specializations', 'type': 'specialization' },
+      { 'url': 'EJCRHLPNYBNQ','uni':'cal', 'title': 'Web Design: Strategy and Information Architecture', 'type': 'course' },
+      { 'url': 'HZR7KWU4ZXDL','uni':'cal', 'title': 'UX Design Fundamentals', 'type': 'course' },
+      { 'url': '8ZEA4F246KSS','uni':'cal', 'title': 'Visual Elements of User Interface Design', 'type': 'course' },
+      { 'url': 'LP2LDWLZJ7VC','uni':'minn', 'title': 'Prototyping and Design', 'type': 'course' },
+      { 'url': 'FB7AEF2BMVC2','uni':'minn', 'title': 'User Research and Design', 'type': 'course' },
+      { 'url': 'GHRMCEBMKNTP','uni':'minn', 'title': 'Introduction to UI Design', 'type': 'course' }
     ].map((item) => (
-      ((item.type === 'specialization') ? ({ 'url': `https://www.coursera.org/account/accomplishments/specialization/${item.url}`, 'title': item.title }) : ({ 'url': `https://www.coursera.org/account/accomplishments/verify/${item.url}`, 'title': item.title }))
+      ((item.type === 'specialization') ? ({ 'url': `https://www.coursera.org/account/accomplishments/specialization/${item.url}`,'uni': item.uni, 'title': item.title }) : ({ 'url': `https://www.coursera.org/account/accomplishments/verify/${item.url}`,'uni': item.uni, 'title': item.title }))
     ));
-  public mySlideOptions = { items: 5, dots: true, nav: false, margin: 10 };
+  public mySlideOptions = { items: 4, dots: true, nav: false, margin: 10 };
 
   title = 'app';
   public ChartLabels: string[] = ["JavaScript", "UI/UX", "CSS/CSS3", "PHP", "Adobe Photoshop", "Adobe Illustrator", "Adobe XD"];
