@@ -11,6 +11,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { OverlayComponent } from './overlay/overlay.component';
+import { SafehtmlPipe } from './safehtml.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { OverlayComponent } from './overlay/overlay.component';
     WorkListComponent,
     FooterComponent,
     HeaderComponent,
-    OverlayComponent
+    OverlayComponent,
+    SafehtmlPipe
   ],
   imports: [
     BrowserModule,

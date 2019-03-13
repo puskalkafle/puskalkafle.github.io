@@ -7,7 +7,6 @@ import * as $ from 'jquery';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  // public mySlideImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
   public mySlideAccomplishment =
     [
       { 'url': '5JG8H7G6RULP','uni':'cal', 'title': 'Graphic Design Specializations', 'type': 'specialization' },

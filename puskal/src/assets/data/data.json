@@ -1,0 +1,6 @@
+[
+    {"slug": "development","type": "Web Development", "title": "<a  target='_blank' href='https://frostarthemes.com'>Frostar Themes</a>", "desc": "Frostar Themes was build to sale premium WordPress themes.", "img": "work/HomeDesktopHD.jpg"},
+    {"slug": "development","type": "Web Development", "title": "<a target='_blank' href='https://frostarthemes.com/demo/frostar_startup'>Startup Theme</a>", "desc": "Startup Theme is WordPress Premium Theme for startup companies.", "img": "work/frostarthemes-demo-frostar_startup.jpg"},
+    {"slug": "design","type": "Design", "title": "Web Design", "desc": "Static desgin for Bit Roshi client.", "img": "work/Company_Active.jpg"},
+    {"slug": "design","type": "Design", "title": "Business Card", "desc": "Business card design for Bit Roshi client.", "img": "work/BusinessCardDesign.png"}
+]

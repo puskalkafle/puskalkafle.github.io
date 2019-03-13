@@ -7,7 +7,7 @@ import { tap, catchError } from 'rxjs/operators';
 @Injectable()
 export class WorkService {
 
-  private _url: string = "/assets/data/employees.json";
+  private _url: string = "/assets/data/data.json";
 
   constructor(private http:HttpClient) { }
 

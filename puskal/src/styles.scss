@@ -14,6 +14,12 @@ ul,li{
   list-style-type: none;
 }
 a{
+  color:  #333333;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+a:hover{
   color:  #707070;
 }
 .btn{

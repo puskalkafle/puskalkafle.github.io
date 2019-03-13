@@ -4,8 +4,8 @@
       <div ngClass="work-img" (click)='preview(work.img)' [ngStyle]="{background: 'url(assets/' + work.img + ')','background-size':'cover'}"></div>
       <div ngClass="work-info">
       <small>{{ work.type}}</small>
-      <h3>{{work.title}}</h3>
-      <p>{{work.desc}}</p>
+        <h3 [innerHtml]="work.title | safeHtml"></h3>
+        <p [innerHtml]="work.desc | safeHtml"></p>
       </div>
     </div>
     <ng-template #filterBlock>
@@ -13,8 +13,8 @@
       <div ngClass="work-img" (click)='preview(work.img)' [ngStyle]="{background: 'url(assets/' + work.img + ')','background-size':'cover'}"></div>
       <div ngClass="work-info">
         <small>{{work.type}}</small>
-        <h3>{{work.title}}</h3>
-        <p>{{work.desc}}</p>
+        <h3 [innerHtml]="work.title | safeHtml"></h3>
+        <p [innerHtml]="work.desc | safeHtml"></p>
       </div>
       </div>
     </ng-template>
