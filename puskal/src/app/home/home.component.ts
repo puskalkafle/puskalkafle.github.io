@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     'work/till_i_m_gone_dp.jpg', 
     'work/tree_frog_digital_painting.jpg',
     'work/nk_new.jpg', 
-    'work/blame-it.jpg', 
+    // 'work/blame-it.jpg',
     'work/Dog_DIGITAL-PAINTING.jpg' 
   ];
   public mySlideOptions = { items: 3, dots: true, nav: false, margin: 10 };
