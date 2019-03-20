@@ -10,9 +10,7 @@ export class AboutMeComponent implements OnInit {
   public mySlideAccomplishment =
     [
       { 'url': '5JG8H7G6RULP','uni':'cal', 'title': 'Graphic Design Specializations', 'type': 'specialization' },
-      { 'url': 'EJCRHLPNYBNQ','uni':'cal', 'title': 'Web Design: Strategy and Information Architecture', 'type': 'course' },
-      { 'url': 'HZR7KWU4ZXDL','uni':'cal', 'title': 'UX Design Fundamentals', 'type': 'course' },
-      { 'url': '8ZEA4F246KSS','uni':'cal', 'title': 'Visual Elements of User Interface Design', 'type': 'course' },
+      { 'url': 'MUEHETPWWYQY','uni':'cal', 'title': 'UI / UX Design Specializations', 'type': 'specialization' },
       { 'url': 'LP2LDWLZJ7VC','uni':'minn', 'title': 'Prototyping and Design', 'type': 'course' },
       { 'url': 'FB7AEF2BMVC2','uni':'minn', 'title': 'User Research and Design', 'type': 'course' },
       { 'url': 'GHRMCEBMKNTP','uni':'minn', 'title': 'Introduction to UI Design', 'type': 'course' }
