@@ -6,7 +6,9 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+
 }
+
 
 ul,li{
   padding: 0;
@@ -78,4 +80,11 @@ a:hover{
 
 .body.preview-box{
   overflow: hidden;
+}
+
+@media  (max-width:1120px){
+  header nav,.section{
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
 }
