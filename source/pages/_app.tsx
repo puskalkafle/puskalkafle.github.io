@@ -1,14 +1,8 @@
 import { useEffect } from 'react';
-import { QueryCache, ReactQueryCacheProvider } from 'react-query';
 import { ThemeProvider } from 'styled-components';
-
-import 'swiper/swiper-bundle.css';
-
 import GlobalStyle from '../globalStyle';
 import '../styles/index.css';
 import theme from '../theme';
-
-const queryCache = new QueryCache();
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -20,12 +14,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <ReactQueryCacheProvider queryCache={queryCache}>
           <ThemeProvider theme={theme}>
             <GlobalStyle />
             <Component {...pageProps} />
           </ThemeProvider>
-      </ReactQueryCacheProvider>
     </>
   );
 }

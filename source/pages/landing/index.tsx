@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Col, Row } from 'react-grid-system';
+import { Container, Col, Row, setConfiguration } from 'react-grid-system';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
-
+setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
 
 interface Props { }
 
