@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container, Col, Row, setConfiguration } from 'react-grid-system';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
+setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
 
 interface Props { }
 
@@ -13,6 +16,8 @@ const Landing: React.FunctionComponent<Props> = () => {
 
   return (
     <Main>
+
+      <Container>
         <ContentWrapper>
           <div className="top">
             <div className="row">
@@ -23,20 +28,25 @@ const Landing: React.FunctionComponent<Props> = () => {
           <div className="bottom">
             <div className="row">
               <Box className="box-bottom-left-border"></Box>
-              <a id="myworks" href="/portfolio">My Works</a>
               <div className="social">
                 <FontAwesomeIcon icon={faTwitter} />
                 <FontAwesomeIcon icon={faLinkedin} />
                 / <span>{currentYear}</span>
-                
                 </div>
             </div>
           </div>
         </ContentWrapper>
+      </Container>
       <div className="mid">
         <div className="main-text">
-          <div>Puskal</div>
-          <div>Design</div>
+          <div>PORTFOLIO</div>
+          <div id="filters">
+            <a href="#">Design</a>/
+            <a href="#">Development</a>/
+            <a href="#">Art</a>/
+            <a href="#">Photography</a>
+            </div>
+
         </div>
       </div>
     </Main>
@@ -48,25 +58,41 @@ const Main = styled.main`
   font-size:150px;
   font-weight:bold;
   text-transform: uppercase;
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  .main-text>div:last-child{
+  .main-text>div{
     position: relative;
     transform: translateY(-61%);
     background: ${({ theme }) => theme.colors.primary.light};
-    line-height: 100px;
-    letter-spacing: -1.7px;
+    letter-spacing: -8px;
   }
-  &:after{
-    content:'';
-    position:fixed;
-    left:50%;
-    bottom:-2vh;
-    width:1px;
-    height:43px;
-    background:${({ theme }) => theme.colors.primary.dark};
+
+  #filters{
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color:${({ theme }) => theme.colors.primary.dark};
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    background: none;
+    font-weight:300;
+    display: flex;
+    font-size:${({ theme }) => theme.fontSize.l};
+    a{
+      font-weight:300;
+      display:inline-block;
+      padding:0 ${({ theme }) => theme.spacing.s} 0 ${({ theme }) => theme.spacing.sm};
+      font-size:${({ theme }) => theme.fontSize.l};
+      letter-spacing: normal;
+      line-height: initial;
+      background: none;
+      color:${({ theme }) => theme.colors.primary.dark};
+      &:hover{
+        color:${({ theme }) => theme.colors.primary.default};
+      }
+    }
   }
 }
 `;
@@ -74,7 +100,6 @@ const ContentWrapper = styled.div`
 display:flex;
 flex-direction:column;
 justify-content: space-aroung;
-padding:0 ${({ theme }) => theme.spacing.xxxxl};
 &>div{
   height:50vh;
   max-height:50vh;
@@ -94,18 +119,6 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
     }
   }
   &.bottom{
-    #myworks{
-      transform: translateX(-50%);
-      text-transform: uppercase;
-      font-weight:normal;
-      color:${({ theme }) => theme.colors.primary.dark};
-      position: absolute;
-      bottom: 65px;
-      left: 50%;
-      &:hover{
-        color:${({ theme }) => theme.colors.primary.default};
-      }
-    }
     .social{
       display: flex;
       align-items: center;
