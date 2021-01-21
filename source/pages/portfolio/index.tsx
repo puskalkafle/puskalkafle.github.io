@@ -4,7 +4,9 @@ import { Container, Col, Row, setConfiguration } from 'react-grid-system';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Masonry from 'react-masonry-css'
+import Masonry from 'react-masonry-css';
+import ReactFancyBox from 'react-fancybox'
+import 'react-fancybox/lib/fancybox.css'
 
 
 setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
@@ -25,7 +27,7 @@ const Landing: React.FunctionComponent<Props> = () => {
   let items: { id: number; name: string; }[];
   let el: any[];
   items = [
-    { id: 1, name: 'My First Item' },
+    { id: 1, name: 'My First Item My First Item My First Item  My First Item  My First Item  My First Item ' },
     { id: 2, name: 'Another itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother item' },
     { id: 3, name: 'Third Item' },
     { id: 4, name: 'Here is the Fourth' },
@@ -44,27 +46,30 @@ const Landing: React.FunctionComponent<Props> = () => {
           </div>
         </div>
         <div className="mid">
-        <div className="main-text">
-          <div>PORTFOLIO</div>
-          <div id="filters">
-            <a href="#">All</a>/
+          <div className="main-text">
+            <div>PORTFOLIO</div>
+            <div id="filters">
+              <a href="#">All</a>/
             <a href="#">Design</a>/
             <a href="#">Development</a>/
             <a href="#">Art</a>/
             <a href="#">Photography</a>
-          </div>
+            </div>
 
+          </div>
         </div>
-      </div>
-      <Container>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          {el}
-        </Masonry>
-      </Container>
+        <Container>
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {el}
+          </Masonry>
+          {/* <ReactFancyBox
+          thumbnail="https://loremflickr.com/320/240"
+          image="https://www.w3schools.com/howto/img_forest.jpg"/> */}
+        </Container>
         <div className="bottom">
           <div className="row">
             <Box className="box-bottom-left-border"></Box>
@@ -118,24 +123,26 @@ const Main = styled.main`
   font-size:150px;
   font-weight:bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  .main-text>div{
+  .main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:${({ theme }) => theme.spacing.xxxxxl};
+  &>div{
     position: relative;
-    transform: translateY(-61%);
+    // transform: translateY(-61%);
     background: ${({ theme }) => theme.colors.primary.light};
     letter-spacing: -8px;
   }
+}
 
   #filters{
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     text-transform: uppercase;
     color:${({ theme }) => theme.colors.primary.dark};
-    position: absolute;
-    bottom: 65px;
-    left: 50%;
+    // position: absolute;
+    // bottom: 65px;
+    // left: 50%;
     background: none;
     font-weight:300;
     display: flex;
@@ -162,9 +169,6 @@ flex-direction:column;
 justify-content: space-aroung;
 padding:0 ${({ theme }) => theme.spacing.xxxxl};
 &>div{
-  height:50vh;
-  max-height:50vh;
-  min-height:50vh;
   display: flex;
   align-items: flex-end;
   .row{
