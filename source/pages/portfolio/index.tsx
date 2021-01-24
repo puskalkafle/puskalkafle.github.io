@@ -4,20 +4,12 @@ import { Container, Col, Row, setConfiguration } from 'react-grid-system';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Masonry from 'react-masonry-css';
-import ReactFancyBox from 'react-fancybox'
-import 'react-fancybox/lib/fancybox.css'
+import { SRLWrapper } from "simple-react-lightbox";
 
 
 setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
 
 interface Props { }
-const breakpointColumnsObj = {
-  default: 4,
-  1100: 3,
-  700: 2,
-  500: 1
-};
 
 
 
@@ -58,17 +50,31 @@ const Landing: React.FunctionComponent<Props> = () => {
 
           </div>
         </div>
-        <Container>
-          <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="my-masonry-grid"
-            columnClassName="my-masonry-grid_column"
-          >
-            {el}
-          </Masonry>
-          {/* <ReactFancyBox
-          thumbnail="https://loremflickr.com/320/240"
-          image="https://www.w3schools.com/howto/img_forest.jpg"/> */}
+        <Container className="container">
+          <WorkList>
+            <SRLWrapper>
+              <a className="item">
+                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
+                    <img src="/assets/img/test.jpg" alt="Umbrella1" />
+                </div>
+              </a>
+              <a className="item">
+                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
+                    <img src="/assets/img/test.jpg" alt="Umbrella2" />
+                </div>
+              </a>
+              <a className="item">
+                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
+                    <img src="/assets/img/test.jpg" alt="Umbrella3" />
+                </div>
+              </a>
+              <a className="item">
+                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
+                    <img src="/assets/img/test.jpg" alt="Umbrella4" />
+                </div>
+              </a>
+            </SRLWrapper>
+          </WorkList>
         </Container>
         <div className="bottom">
           <div className="row">
@@ -85,39 +91,41 @@ const Landing: React.FunctionComponent<Props> = () => {
     </Main>
   );
 };
+const WorkList = styled.div`
+padding-bottom:${({ theme }) => theme.spacing.xxxxxl};
+width:100%;
+&>div{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+a.item{
+  width: 33.33%;
+  height: 300px;
+  padding:5px;
+  box-sizing: border-box;
+  &:last-child{
+    margin:auto;
+  }
+  .inner{
+    background: lightgray;
+    height:100%;
+    width:100%;
+    background-size:cover;
+    overflow:hidden;
+    cursor:pointer;
+    box-shadow: 0 4px 4px -3px #8c8c8c;
+    img{
+      opacity:0;
+    }
+  }
+}
+
+
+`;
+
 const Main = styled.main`
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
-@media (max-width: 800px) {
-  .my-masonry-grid {
-    margin-left: -15px; /* gutter size offset */
-  }
-  .my-masonry-grid_column {
-    padding-left: 15px; /* gutter size offset */
-  }
-  .my-masonry-grid_column > div {
-    margin-bottom: 15px; /* space between items */
-  }
-}
- 
-/* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
-}
-
-
-
-
 .mid{
   justify-content: center;
   font-size:150px;
@@ -168,6 +176,9 @@ display:flex;
 flex-direction:column;
 justify-content: space-aroung;
 padding:0 ${({ theme }) => theme.spacing.xxxxl};
+.container{
+  width:100%;
+}
 &>div{
   display: flex;
   align-items: flex-end;

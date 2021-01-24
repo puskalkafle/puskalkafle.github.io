@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../globalStyle';
 import '../styles/index.css';
 import theme from '../theme';
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }) {
     <>
           <ThemeProvider theme={theme}>
             <GlobalStyle />
+            <SimpleReactLightbox>
             <Component {...pageProps} />
+            </SimpleReactLightbox>
           </ThemeProvider>
     </>
   );
