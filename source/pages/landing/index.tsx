@@ -25,8 +25,8 @@ const Landing: React.FunctionComponent<Props> = () => {
               <Box className="box-bottom-left-border"></Box>
               <a id="myworks" href="/portfolio">My Works</a>
               <div className="social">
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faLinkedin} />
+              <a href="https://twitter.com/Puskal"  target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="https://www.linkedin.com/in/puskal/"  target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                 / <span>{currentYear}</span>
                 
                 </div>
@@ -109,6 +109,9 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
     .social{
       display: flex;
       align-items: center;
+      a{
+        color:${({ theme }) => theme.colors.primary.default};
+      }
       color:${({ theme }) => theme.colors.primary.default};
       svg{
         margin-right:${({ theme }) => theme.spacing.sm};

@@ -1,0 +1,11 @@
+{
+    "data":{
+        "item1":{"slug": "development","type": "Web Development", "title": "<a  target='_blank' href='https://frostarthemes.com'>Frostar Themes</a>", "desc": "Frostar Themes was build to sale premium WordPress themes.", "img": "HomeDesktopHD.jpg"},
+        "item2":{"slug": "development","type": "Web Development", "title": "<a target='_blank' href='https://frostarthemes.com/demo/frostar_startup'>Startup Theme</a>", "desc": "Startup Theme is WordPress Premium Theme for startup companies.", "img": "frostarthemes-demo-frostar_startup.jpg"},
+        "item3":{"slug": "design","type": "Design", "title": "Web Design", "desc": "Static desgin for Bit Roshi client. It is Sydney based software development company.", "img": "Company_Active.jpg"},
+        "item4":{"slug": "design","type": "Design", "title": "Business Card", "desc": "Business card design for Bit Roshi client.", "img": "BusinessCardDesign.png"},
+        "item5":{"slug": "design","type": "Design", "title": "<a href='http://www.nctc.org.np/'>Logo Design</a>", "desc": "Logo Design for Nepal Chamber of Tax Consultants.", "img": "NCTC_logo.png"},
+        "item6":{"slug": "design","type": "Design", "title": "<a href='http://enlivit.com'>Logo Design</a>", "desc": "Logo Design for Enliv Information Technologies.", "img": "enliv_logo.png"},
+        "item7":{"slug": "development","type": "Desktop Application", "title": "<a href='", "desc": "Family Tree for mobile and desktop app.", "img": "family_tree.gif"}
+    }
+}

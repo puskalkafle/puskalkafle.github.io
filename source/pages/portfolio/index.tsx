@@ -5,6 +5,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SRLWrapper } from "simple-react-lightbox";
+import Data from "../../data/data.json";
 
 
 setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
@@ -16,18 +17,19 @@ interface Props { }
 const Landing: React.FunctionComponent<Props> = () => {
   let d = new Date();
   let currentYear = d.getFullYear();
-  let items: { id: number; name: string; }[];
+  // let items: { id: number; name: string; }[];
   let el: any[];
-  items = [
-    { id: 1, name: 'My First Item My First Item My First Item  My First Item  My First Item  My First Item ' },
-    { id: 2, name: 'Another itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother item' },
-    { id: 3, name: 'Third Item' },
-    { id: 4, name: 'Here is the Fourth' },
-    { id: 5, name: 'High Five' }
-  ];
-  el = items.map(function (item) {
-    return <div key={item.id}>{item.name}</div>
-  });
+  // items = [
+  //   { id: 1, name: 'My First Item My First Item My First Item  My First Item  My First Item  My First Item ' },
+  //   { id: 2, name: 'Another itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother itemAnother item' },
+  //   { id: 3, name: 'Third Item' },
+  //   { id: 4, name: 'Here is the Fourth' },
+  //   { id: 5, name: 'High Five' }
+  // ];
+  // el = items.map(function (item) {
+  //   return <div key={item.id}>{item.name}</div>
+  // });
+
   return (
     <Main>
       <ContentWrapper>
@@ -53,26 +55,13 @@ const Landing: React.FunctionComponent<Props> = () => {
         <Container className="container">
           <WorkList>
             <SRLWrapper>
+            {Object.values(Data.data).map((item, i) => (
               <a className="item">
-                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
-                    <img src="/assets/img/test.jpg" alt="Umbrella1" />
-                </div>
-              </a>
-              <a className="item">
-                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
-                    <img src="/assets/img/test.jpg" alt="Umbrella2" />
-                </div>
-              </a>
-              <a className="item">
-                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
-                    <img src="/assets/img/test.jpg" alt="Umbrella3" />
-                </div>
-              </a>
-              <a className="item">
-                <div className="inner" style={{ backgroundImage: `url(/assets/img/test.jpg)` }}>
-                    <img src="/assets/img/test.jpg" alt="Umbrella4" />
-                </div>
-              </a>
+              <div className="inner" style={{ backgroundImage: `url(/assets/img/work/${item.img})` }}>
+                  <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} />
+              </div>
+            </a>
+            ))}
             </SRLWrapper>
           </WorkList>
         </Container>
@@ -80,8 +69,8 @@ const Landing: React.FunctionComponent<Props> = () => {
           <div className="row">
             <Box className="box-bottom-left-border"></Box>
             <div className="social">
-              <FontAwesomeIcon icon={faTwitter} />
-              <FontAwesomeIcon icon={faLinkedin} />
+              <a href="https://twitter.com/Puskal"  target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="https://www.linkedin.com/in/puskal/"  target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                 / <span>{currentYear}</span>
             </div>
           </div>
@@ -109,12 +98,13 @@ a.item{
     margin:auto;
   }
   .inner{
-    background: lightgray;
+    background: #fff;
     height:100%;
     width:100%;
     background-size:cover;
     overflow:hidden;
     cursor:pointer;
+    border:1px solid #e8e7e3;
     box-shadow: 0 4px 4px -3px #8c8c8c;
     img{
       opacity:0;
@@ -198,6 +188,9 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
     .social{
       display: flex;
       align-items: center;
+      a{
+        color:${({ theme }) => theme.colors.primary.default};
+      }
       color:${({ theme }) => theme.colors.primary.default};
       svg{
         margin-right:${({ theme }) => theme.spacing.sm};
