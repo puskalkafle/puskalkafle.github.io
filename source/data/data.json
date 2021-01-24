@@ -6,6 +6,11 @@
         "item4":{"slug": "design","type": "Design", "title": "Business Card", "desc": "Business card design for Bit Roshi client.", "img": "BusinessCardDesign.png"},
         "item5":{"slug": "design","type": "Design", "title": "<a href='http://www.nctc.org.np/'>Logo Design</a>", "desc": "Logo Design for Nepal Chamber of Tax Consultants.", "img": "NCTC_logo.png"},
         "item6":{"slug": "design","type": "Design", "title": "<a href='http://enlivit.com'>Logo Design</a>", "desc": "Logo Design for Enliv Information Technologies.", "img": "enliv_logo.png"},
-        "item7":{"slug": "development","type": "Desktop Application", "title": "<a href='", "desc": "Family Tree for mobile and desktop app.", "img": "family_tree.gif"}
+        "item7":{"slug": "development","type": "Desktop Application", "title": "", "desc": "Family Tree for mobile and desktop app.", "img": "family_tree.gif"},
+        "item8":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nicole Kidman digital painting.", "img": "nk_new.jpg"},
+        "item9":{"slug": "art","type": "Illustration", "title": "", "desc": "Abstract illustration.", "img": "abstract_illustration.jpg"},
+        "item10":{"slug": "design","type": "Design", "title": "", "desc": "Web design for EEZY COOK.", "img": "eezy_cook.gif"},
+        "item11":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nature digital painting.", "img": "nature.jpg"},
+        "item12":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Tree frog digital painting.", "img": "tree_frog_digital_painting.jpg"}
     }
 }

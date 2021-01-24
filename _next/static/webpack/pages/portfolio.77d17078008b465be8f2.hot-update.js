@@ -1,0 +1,14 @@
+webpackHotUpdate_N_E("pages/portfolio",{
+
+/***/ "./data/data.json":
+/*!************************!*\
+  !*** ./data/data.json ***!
+  \************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+eval("module.exports = JSON.parse(\"{\\\"data\\\":{\\\"item1\\\":{\\\"slug\\\":\\\"development\\\",\\\"type\\\":\\\"Web Development\\\",\\\"title\\\":\\\"<a  target='_blank' href='https://frostarthemes.com'>Frostar Themes</a>\\\",\\\"desc\\\":\\\"Frostar Themes was build to sale premium WordPress themes.\\\",\\\"img\\\":\\\"HomeDesktopHD.jpg\\\"},\\\"item2\\\":{\\\"slug\\\":\\\"development\\\",\\\"type\\\":\\\"Web Development\\\",\\\"title\\\":\\\"<a target='_blank' href='https://frostarthemes.com/demo/frostar_startup'>Startup Theme</a>\\\",\\\"desc\\\":\\\"Startup Theme is WordPress Premium Theme for startup companies.\\\",\\\"img\\\":\\\"frostarthemes-demo-frostar_startup.jpg\\\"},\\\"item3\\\":{\\\"slug\\\":\\\"design\\\",\\\"type\\\":\\\"Design\\\",\\\"title\\\":\\\"Web Design\\\",\\\"desc\\\":\\\"Static desgin for Bit Roshi client. It is Sydney based software development company.\\\",\\\"img\\\":\\\"Company_Active.jpg\\\"},\\\"item4\\\":{\\\"slug\\\":\\\"design\\\",\\\"type\\\":\\\"Design\\\",\\\"title\\\":\\\"Business Card\\\",\\\"desc\\\":\\\"Business card design for Bit Roshi client.\\\",\\\"img\\\":\\\"BusinessCardDesign.png\\\"},\\\"item5\\\":{\\\"slug\\\":\\\"design\\\",\\\"type\\\":\\\"Design\\\",\\\"title\\\":\\\"<a href='http://www.nctc.org.np/'>Logo Design</a>\\\",\\\"desc\\\":\\\"Logo Design for Nepal Chamber of Tax Consultants.\\\",\\\"img\\\":\\\"NCTC_logo.png\\\"},\\\"item6\\\":{\\\"slug\\\":\\\"design\\\",\\\"type\\\":\\\"Design\\\",\\\"title\\\":\\\"<a href='http://enlivit.com'>Logo Design</a>\\\",\\\"desc\\\":\\\"Logo Design for Enliv Information Technologies.\\\",\\\"img\\\":\\\"enliv_logo.png\\\"},\\\"item7\\\":{\\\"slug\\\":\\\"development\\\",\\\"type\\\":\\\"Desktop Application\\\",\\\"title\\\":\\\"\\\",\\\"desc\\\":\\\"Family Tree for mobile and desktop app.\\\",\\\"img\\\":\\\"family_tree.gif\\\"},\\\"item8\\\":{\\\"slug\\\":\\\"art\\\",\\\"type\\\":\\\"Digital Painting\\\",\\\"title\\\":\\\"\\\",\\\"desc\\\":\\\"Nicole Kidman digital painting.\\\",\\\"img\\\":\\\"nk_new.jpg\\\"},\\\"item9\\\":{\\\"slug\\\":\\\"art\\\",\\\"type\\\":\\\"Illustration\\\",\\\"title\\\":\\\"\\\",\\\"desc\\\":\\\"Abstract illustration.\\\",\\\"img\\\":\\\"abstract_illustration.jpg\\\"},\\\"item10\\\":{\\\"slug\\\":\\\"design\\\",\\\"type\\\":\\\"Design\\\",\\\"title\\\":\\\"\\\",\\\"desc\\\":\\\"Web design for EEZY COOK.\\\",\\\"img\\\":\\\"eezy_cook.gif\\\"}}}\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL2RhdGEvZGF0YS5qc29uLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./data/data.json\n");
+
+/***/ })
+
+})
