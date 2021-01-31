@@ -8,10 +8,10 @@ const Main: React.FunctionComponent<Props> = () => {
   return (
     <>
       <Head>
-        <title>Puskal - Desinger and Developer</title>
+        <title>Puskal - Designer and Developer</title>
         <link rel="icon" href="/favicon.ico" />
         {/* <!-- Search Engine --> */}
-<meta name="title" content="Puskal Kafle - UX/UI Desinger and Frontend Developer"/>
+<meta name="title" content="Puskal Kafle - UX/UI Designer and Frontend Developer"/>
 <meta name="description" content="Puskal Kafle is Napel based frontend developer and UI/UX designer. Visit this website to see his work."/>
 <meta name="keywords" content="UI mockups, prototypes, wireframes, style guides, standards, graphic elements, design suggestions, reusable code, collaborate, usability, bug-free, communication skills, detail-oriented, JavaScript, HTML5, CSS3, RESTful APIs, GUI, Color Theory, Typography, Adobe XD, Adobe Photoshop, Adobe Illustrator, Puskal Kafle, Kathmandu, Nepal, designer, developer, graphic designer, software developer, web developer, web application, freelancer, javascript, d3js, data visualization, jquery, angular, git, best desiger, top designer, emerging technologies, json, npm, digital painting, vector art, branding, style guideline"/>
 <meta name="robots" content="index, follow"/>
