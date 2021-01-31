@@ -11,6 +11,10 @@
         "item9":{"slug": "art","type": "Illustration", "title": "", "desc": "Abstract illustration.", "img": "abstract_illustration.jpg"},
         "item10":{"slug": "design","type": "Design", "title": "", "desc": "Web design for EEZY COOK.", "img": "eezy_cook.gif"},
         "item11":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nature digital painting.", "img": "nature.jpg"},
-        "item12":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Tree frog digital painting.", "img": "tree_frog_digital_painting.jpg"}
+        "item12":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Tree frog digital painting.", "img": "tree_frog_digital_painting.jpg"},
+        "item13":{"slug": "photography","type": "Photography", "title": "", "desc": "Hotel Corridor.", "img": "hotel.jpg"},
+        "item14":{"slug": "photography","type": "Photography", "title": "", "desc": "Way to Tilicho Lake.", "img": "tilicho.jpg"},
+        "item15":{"slug": "photography","type": "Photography", "title": "", "desc": "Kathmandu sky in the evening.", "img": "nightsky.jpg"},
+        "item16":{"slug": "photography","type": "Photography", "title": "", "desc": "Tile Roof of the hotel.", "img": "hotel_roof.jpg"}
     }
 }
