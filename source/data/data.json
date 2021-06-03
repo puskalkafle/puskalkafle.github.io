@@ -15,6 +15,8 @@
         "item13":{"slug": "photography","type": "Photography", "title": "", "desc": "Hotel Corridor.", "img": "hotel.jpg"},
         "item14":{"slug": "photography","type": "Photography", "title": "", "desc": "Way to Tilicho Lake.", "img": "tilicho.jpg"},
         "item15":{"slug": "photography","type": "Photography", "title": "", "desc": "Kathmandu sky in the evening.", "img": "nightsky.jpg"},
-        "item16":{"slug": "photography","type": "Photography", "title": "", "desc": "Tile Roof of the hotel.", "img": "hotel_roof.jpg"}
+        "item16":{"slug": "photography","type": "Photography", "title": "", "desc": "Tile Roof of the hotel.", "img": "hotel_roof.jpg"},
+        "item17":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Realistic squirrel digital painting.", "img": "squirrel_digital_painting.jpg"},
+        "item18":{"slug": "photography","type": "Photography", "title": "", "desc": "Morning at Taudaha Lake.", "img": "Taudaha_Lake.jpg"}
     }
 }

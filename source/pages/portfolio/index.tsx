@@ -83,7 +83,7 @@ const Landing: React.FunctionComponent<Props> = () => {
               <SRLWrapper>
                 {Object.values(data).map((item, i) => (
                   <a key={i} className="item">
-                    <div className="inner" style={{ backgroundImage: `url(/assets/img/work/${item.img})` }}>
+                    <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
                       <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} />
                     </div>
                   </a>
