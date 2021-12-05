@@ -9,7 +9,7 @@
         "item7":{"slug": "development","type": "Desktop Application", "title": "", "desc": "Family Tree for mobile and desktop app.", "img": "family_tree.gif"},
         "item8":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nicole Kidman digital painting.", "img": "nk_new.jpg"},
         "item9":{"slug": "art","type": "Illustration", "title": "", "desc": "Abstract illustration.", "img": "abstract_illustration.jpg"},
-        "item10":{"slug": "design","type": "Design", "title": "", "desc": "Web design for EEZY COOK.", "img": "eezy_cook.gif"},
+        "item10":{"slug": "development","type": "Development", "title": "", "desc": "Web design for EEZY COOK.", "img": "eezy_cook.gif"},
         "item11":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nature digital painting.", "img": "nature.jpg"},
         "item12":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Tree frog digital painting.", "img": "tree_frog_digital_painting.jpg"},
         "item13":{"slug": "photography","type": "Photography", "title": "", "desc": "Hotel Corridor.", "img": "hotel.jpg"},

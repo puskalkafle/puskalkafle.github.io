@@ -27,6 +27,14 @@ const Landing: React.FunctionComponent<Props> = () => {
   let d = new Date();
   let currentYear = d.getFullYear();
   let el: any[];
+  const options = {
+    progressBar: {
+      backgroundColor: '#f2f2f2',
+      fillColor: '#000000',
+      height: '30000px',
+      showProgressBar: true
+    }
+  }
   function filterCard(e, slug) {
     e.preventDefault();
     if (slug !== 'all') {
@@ -80,7 +88,7 @@ const Landing: React.FunctionComponent<Props> = () => {
           </div>
           <Container className="container">
             <WorkList>
-              <SRLWrapper>
+              <SRLWrapper options={options}>
                 {Object.values(data).map((item, i) => (
                   <a key={i} className="item">
                     <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
