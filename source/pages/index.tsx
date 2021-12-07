@@ -31,6 +31,17 @@ const Main: React.FunctionComponent<Props> = () => {
 <meta name="og:url" content="https://www.puskalkafle.com.np/"/>
 <meta name="og:site_name" content="Puskal Kafle Website"/>
 <meta name="og:type" content="website"/>
+{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64763340-5"></script>
+<script>
+{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-64763340-5');
+  `}
+</script>
+
       </Head>
       <Landing />
     </>
