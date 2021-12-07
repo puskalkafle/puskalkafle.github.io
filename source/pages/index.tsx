@@ -28,7 +28,7 @@ const Main: React.FunctionComponent<Props> = () => {
 {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
 <meta name="og:title" content="Puskal Kafle - Web Designer and Developer"/>
 <meta name="og:description" content="Frontend developer and designer from Kathmandu, Nepal"/>
-<meta name="og:url" content="https://puskalkafle.github.io"/>
+<meta name="og:url" content="https://www.puskalkafle.com.np/"/>
 <meta name="og:site_name" content="Puskal Kafle Website"/>
 <meta name="og:type" content="website"/>
       </Head>
