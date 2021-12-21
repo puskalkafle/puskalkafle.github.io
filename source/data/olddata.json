@@ -1,0 +1,7 @@
+{
+    "data":{
+        "item4":{"slug": "design","type": "Design", "title": "Business Card", "desc": "Business card design for Bit Roshi client.", "img": "BusinessCardDesign.png"},
+        "item5":{"slug": "design","type": "Design", "title": "<a href='http://www.nctc.org.np/'>Logo Design</a>", "desc": "Logo Design for Nepal Chamber of Tax Consultants.", "img": "NCTC_logo.png"},
+        "item6":{"slug": "design","type": "Design", "title": "<a href='http://enlivit.com'>Logo Design</a>", "desc": "Logo Design for Enliv Information Technologies.", "img": "enliv_logo.png"},
+    }
+}

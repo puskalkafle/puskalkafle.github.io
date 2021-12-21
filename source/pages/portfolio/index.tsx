@@ -51,27 +51,27 @@ const Landing: React.FunctionComponent<Props> = () => {
     setLoader(false);
   });
   return (
- 
-      <Main>
-        {
-        //  (loader)?<div className="loader"></div>:'' 
-        }
-        <ContentWrapper>
 
-          <div className="top">
-            <div className="row">
-              <Link href="/">
-                <a><img src="logo.svg" /></a>
-              </Link>
-              <Box className="box-top-right-border"></Box>
-            </div>
+    <Main>
+      {
+        //  (loader)?<div className="loader"></div>:'' 
+      }
+      <ContentWrapper>
+
+        <div className="top">
+          <div className="row">
+            <Link href="/">
+              <a><img src="logo.svg" /></a>
+            </Link>
+            <Box className="box-top-right-border"></Box>
           </div>
-          <div className="mid">
-            <div className="main-text">
+        </div>
+        <div className="mid">
+          <div className="main-text">
             <Tween from={{ x: '500px' }} duration={1} opacity={0}>
               <div>PORTFOLIO</div>
-              </Tween>
-              <Tween duration={2} opacity={0}>
+            </Tween>
+            <Tween duration={2} opacity={0}>
               <div id="filters">
                 {
                   filterMenu.map((d, i) => {
@@ -82,35 +82,35 @@ const Landing: React.FunctionComponent<Props> = () => {
                   })
                 }
               </div>
-              </Tween>
+            </Tween>
 
+          </div>
+        </div>
+        <Container className="container">
+          <WorkList>
+            <SRLWrapper options={options}>
+              {Object.values(data).map((item, i) => (
+                <a key={i} className="item">
+                  <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
+                    <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} />
+                  </div>
+                </a>
+              ))}
+            </SRLWrapper>
+          </WorkList>
+        </Container>
+        <div className="bottom">
+          <div className="row">
+            <Box className="box-bottom-left-border"></Box>
+            <div className="social">
+              <a href="https://twitter.com/Puskal" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="https://www.linkedin.com/in/puskal/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+              / <span>{currentYear}</span>
             </div>
           </div>
-          <Container className="container">
-            <WorkList>
-              <SRLWrapper options={options}>
-                {Object.values(data).map((item, i) => (
-                  <a key={i} className="item">
-                    <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
-                      <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} />
-                    </div>
-                  </a>
-                ))}
-              </SRLWrapper>
-            </WorkList>
-          </Container>
-          <div className="bottom">
-            <div className="row">
-              <Box className="box-bottom-left-border"></Box>
-              <div className="social">
-                <a href="https://twitter.com/Puskal" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
-                <a href="https://www.linkedin.com/in/puskal/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-                / <span>{currentYear}</span>
-              </div>
-            </div>
-          </div>
-        </ContentWrapper>
-      </Main>
+        </div>
+      </ContentWrapper>
+    </Main>
   );
 };
 const WorkList = styled.div`
