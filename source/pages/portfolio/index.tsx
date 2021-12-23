@@ -47,14 +47,20 @@ const Landing: React.FunctionComponent<Props> = () => {
     }
 
   }
-  useEffect(() => {
-    setLoader(false);
-  });
+
+  let loadedImages = [];
+  let handleImageLoaded = (index) => {
+    console.log(loader)
+    loadedImages.push(index);
+    if (Object.keys(data).length === loadedImages.length) {
+      setLoader(false);
+    }
+  }
   return (
 
     <Main>
       {
-        //  (loader)?<div className="loader"></div>:'' 
+        (loader) ? <div className="loader"></div> : ''
       }
       <ContentWrapper>
 
@@ -78,6 +84,7 @@ const Landing: React.FunctionComponent<Props> = () => {
                     return (<a key={i} className={active === d ? 'active' : ''} href="#" onClick={(e) => {
                       filterCard(e, d);
                       setActive(d);
+                      setLoader(true);
                     }}>{d}</a>)
                   })
                 }
@@ -92,7 +99,7 @@ const Landing: React.FunctionComponent<Props> = () => {
               {Object.values(data).map((item, i) => (
                 <a key={i} className="item">
                   <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
-                    <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} />
+                    <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} onLoad={handleImageLoaded.bind(this, i)} />
                   </div>
                 </a>
               ))}
@@ -157,11 +164,11 @@ a.item{
 
 const Main = styled.main`
 .loader {
-  border: 16px solid #f3f3f3;
+  border: 8px solid #fff;
   border-radius: 50%;
-  border-top: 16px solid ${({ theme }) => theme.colors.primary.default};
-  width: 120px;
-  height: 120px;
+  border-top: 8px solid ${({ theme }) => theme.colors.primary.default};
+  width: 60px;
+  height: 60px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   position:fixed;
@@ -169,6 +176,9 @@ const Main = styled.main`
   top:50%;
   z-index:999;
   transform:translate(-50%,-50%);
+  box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.12);
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.12);
 }
 
 /* Safari */
