@@ -50,7 +50,6 @@ const Landing: React.FunctionComponent<Props> = () => {
 
   let loadedImages = [];
   let handleImageLoaded = (index) => {
-    console.log(loader)
     loadedImages.push(index);
     if (Object.keys(data).length === loadedImages.length) {
       setLoader(false);
