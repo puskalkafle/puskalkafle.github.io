@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link';
-import {Tween } from 'react-gsap';
+import { gsap } from "gsap";
+import { useRouter } from 'next/router';
+import Box from '../components/box';
 
 
 interface Props { }
@@ -12,44 +14,60 @@ interface Props { }
 const Landing: React.FunctionComponent<Props> = () => {
   let d = new Date();
   let currentYear = d.getFullYear();
+  const router = useRouter();
+  const contentRef = useRef();
+  const midTextRef = useRef();
+
+  useEffect(() => {
+    gsap.from(contentRef.current, {  duration: 1, opacity: 0 });
+    gsap.from(midTextRef.current, {  duration: 2, opacity: 0 });
+  });
 
   return (
     <Main>
       <ContentWrapper>
         <div className="top">
           <div className="row">
-          <Link href="/">
-            <a><img src="logo.svg" /></a>
+            <Link href="/">
+              <a id="logo"><img src="logo.svg" /></a>
             </Link>
             <Box className="box-top-right-border"></Box>
           </div>
         </div>
+      </ContentWrapper>
+      <ContentWrapper ref={contentRef}>
         <div className="bottom">
           <div className="row">
             <Box className="box-bottom-left-border"></Box>
-            <Link href="/portfolio">
-              <a id="myworks">My Works</a>
-            </Link>
+            <a onClick={() => {
+              gsap.to(contentRef.current, { y: '100px', duration: 1, opacity: 0, onComplete: function () { router.push('/portfolio') } });
+              gsap.to(midTextRef.current, { y: '100px', duration: 1, opacity: 0 });
+            }} id="myworks">My Works</a>
+
             <div className="social">
               <a href="https://twitter.com/Puskal" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
               <a href="https://www.linkedin.com/in/puskal/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-                / <span>{currentYear}</span>
+              / <span>{currentYear}</span>
 
             </div>
           </div>
         </div>
       </ContentWrapper>
-      <div className="mid">
-      <Tween from={{ x: '500px' }} duration={1} opacity={0}>
+      <div className="mid" ref={midTextRef}>
         <div className="main-text">
           <img src="assets/img/puskal_design.svg" />
         </div>
-        </Tween>
       </div>
     </Main>
   );
 };
 const Main = styled.main`
+#logo{
+  cursor:pointer;
+  img{
+    width: 30px;
+  }
+}
 .mid{
   justify-content: center;
   font-size:150px;
@@ -105,6 +123,7 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
   }
   &.bottom{
     #myworks{
+      cursor: pointer;
       transform: translateX(-50%);
       text-transform: uppercase;
       font-weight:normal;
@@ -143,22 +162,6 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
   }
   
 }
-`;
-const Box = styled.div`
-    width:25vh;
-    height:25vh;
-    @media(max-width:767px){
-      width:20vh;
-    }
-    border:1px solid rgba(4,17,26,.2);
-    &.box-top-right-border{
-      border-bottom:none;
-      border-left:none;
-    }
-    &.box-bottom-left-border{
-      border-top:none;
-      border-right:none;
-    }
 `;
 
 

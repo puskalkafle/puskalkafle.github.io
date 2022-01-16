@@ -9,7 +9,7 @@ const Main: React.FunctionComponent<Props> = () => {
     <>
       <Head>
         <title>Puskal - UX Engineer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         {/* <!-- Search Engine --> */}
 <meta name="google-site-verification" content="g5XrM5CffAuoNakjzOepDxTQshDzTQvaHzQVh4nw5dw" />
 <meta name="title" content="Puskal Kafle - UX/UI Designer and Frontend Developer"/>

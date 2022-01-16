@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Container, Col, Row, setConfiguration } from 'react-grid-system';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { SRLWrapper } from "simple-react-lightbox";
-import { Controls, PlayState, Tween } from 'react-gsap';
+// import { SRLWrapper } from "simple-react-lightbox";
+// import { Controls, PlayState, Tween } from 'react-gsap';
 import Data from "../../data/data.json";
+// import Link from 'next/link';
+import { gsap } from "gsap";
+import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Box from '../components/box';
+import Header from 'pages/header';
 
 
 setConfiguration({ containerWidths: [540, 740, 960, 1140, 1140] });
@@ -20,6 +25,9 @@ const Landing: React.FunctionComponent<Props> = () => {
   const mainData = Data.data;
   const [data, setFilterData] = useState(mainData);
   const [loader, setLoader] = useState(true);
+  const portfolioContentRef = useRef();
+  const workContentRef = useRef();
+  const router = useRouter();
 
   let filterMenu = ['all', 'design', 'development', 'art', 'photography'];
   const [active, setActive] = useState(filterMenu[0]);
@@ -55,54 +63,47 @@ const Landing: React.FunctionComponent<Props> = () => {
       setLoader(false);
     }
   }
+  useEffect(() => {
+    // gsap.from(portfolioContentRef.current, { y: '500px', duration: 1, opacity: 0 });
+    // gsap.from(workContentRef.current, { y: '500px', duration: 1, opacity: 0 });
+  });
   return (
-
     <Main>
       {
-        (loader) ? <div className="loader"></div> : ''
+        // (loader) ? <div className="loader"></div> : ''
       }
+
+      <Header/>
       <ContentWrapper>
-
-        <div className="top">
-          <div className="row">
-            <Link href="/">
-              <a><img src="logo.svg" /></a>
-            </Link>
-            <Box className="box-top-right-border"></Box>
-          </div>
-        </div>
-        <div className="mid">
+        <div className="mid" ref={portfolioContentRef}>
           <div className="main-text">
-            <Tween from={{ x: '500px' }} duration={1} opacity={0}>
-              <div>PORTFOLIO</div>
-            </Tween>
-            <Tween duration={2} opacity={0}>
-              <div id="filters">
-                {
-                  filterMenu.map((d, i) => {
-                    return (<a key={i} className={active === d ? 'active' : ''} href="#" onClick={(e) => {
-                      filterCard(e, d);
-                      setActive(d);
-                      setLoader(true);
-                    }}>{d}</a>)
-                  })
-                }
-              </div>
-            </Tween>
-
+            <div>PORTFOLIO</div>
+            <div id="filters">
+              {
+                filterMenu.map((d, i) => {
+                  return (<a key={i} className={active === d ? 'active' : ''} href="#" onClick={(e) => {
+                    filterCard(e, d);
+                    setActive(d);
+                    setLoader(true);
+                  }}>{d}</a>)
+                })
+              }
+            </div>
           </div>
         </div>
         <Container className="container">
-          <WorkList>
-            <SRLWrapper options={options}>
+          <WorkList ref={workContentRef}>
+            {/* <SRLWrapper options={options}> */}
               {Object.values(data).map((item, i) => (
+                 <Link href={`/portfolio/${i}`}>
                 <a key={i} className="item">
                   <div className="inner" style={{ backgroundImage: `url(/assets/img/work/thumbnail/${item.img}.jpg)` }}>
-                    <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} onLoad={handleImageLoaded.bind(this, i)} />
+                    {/* <img src={`/assets/img/work/${item.img}`} alt={`${item.desc}`} onLoad={handleImageLoaded.bind(this, i)} /> */}
                   </div>
                 </a>
+                </Link>
               ))}
-            </SRLWrapper>
+            {/* </SRLWrapper> */}
           </WorkList>
         </Container>
         <div className="bottom">
@@ -121,6 +122,8 @@ const Landing: React.FunctionComponent<Props> = () => {
 };
 const WorkList = styled.div`
 padding-bottom:${({ theme }) => theme.spacing.xxxxxl};
+display: flex;
+flex-wrap: wrap;
 width:100%;
 &>div{
   display:flex;
@@ -303,22 +306,6 @@ padding:0 ${({ theme }) => theme.spacing.xxxxl};
   }
   
 }
-`;
-const Box = styled.div`
-    width:25vh;
-    height:25vh;;
-    @media(max-width:767px){
-      width:20vh;
-    }
-    border:1px solid rgba(4,17,26,.2);
-    &.box-top-right-border{
-      border-bottom:none;
-      border-left:none;
-    }
-    &.box-bottom-left-border{
-      border-top:none;
-      border-right:none;
-    }
 `;
 
 
