@@ -43,7 +43,7 @@
     "save": "^2.4.0",
     "simple-react-lightbox": "^3.5.4",
     "styled-components": "^5.2.1",
-    "swiper": "^6.3.3"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@types/isotope-layout": "^3.0.8",
