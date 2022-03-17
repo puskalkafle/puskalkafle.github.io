@@ -12,11 +12,12 @@ function PortfolioDetail() {
   const [data, setFilterData] = useState([]);
 
   useEffect(() => {
-    const slugId = router.query.slug;
+    const slugId:any = router.query.slug;
 
     if (!!data && slugId) {
-      portfolioItem = Object.values(mainData).filter((d, i) =>
-        i === parseInt(slugId))[0];
+      portfolioItem = Object.values(mainData).filter(function (d, i) {
+        return i === parseInt(slugId);
+      })[0];
       if (portfolioItem) {
         setFilterData(portfolioItem);
       }
