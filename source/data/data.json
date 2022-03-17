@@ -2,11 +2,11 @@
     "data":{
         "item1":{"slug": "development","type": "Web Development", "title": "<a  target='_blank' href='https://frostarthemes.com'>Frostar Themes</a>", "desc": "Frostar Themes was build to sale premium WordPress themes.", "img": "HomeDesktopHD.jpg"},
         "item2":{"slug": "development","type": "Web Development", "title": "<a target='_blank' href='https://frostarthemes.com/demo/frostar_startup'>Startup Theme</a>", "desc": "Startup Theme is WordPress Premium Theme for startup companies.", "img": "frostarthemes-demo-frostar_startup.jpg"},
-        "item3":{"slug": "design","type": "Design", "title": "Web Design", "desc": "Static desgin for Bit Roshi client. It is Sydney based software development company. I was designed in using Adobe XD.", "img": "Company_Active.jpg"},
+        "item3":{"slug": "design","type": "Design", "title": "Web Design", "desc": "Static desgin for Bit Roshi client. It is Sydney based software development company. It was designed in Adobe XD.", "img": "Company_Active.jpg"},
         "item7":{"slug": "development","type": "Desktop Application", "title": "", "desc": "Family Tree for mobile and desktop app. The main purpose of this application is recognize extended family members. I have used d3 to create it and also used ionic and electronjs to create mobile and windows/macOS app respectively.", "img": "family_tree.gif"},
         "item8":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nicole Kidman digital painting.", "img": "nk_new.jpg"},
         "item9":{"slug": "art","type": "Illustration", "title": "", "desc": "Abstract illustration.", "img": "abstract_illustration.jpg"},
-        "item10":{"slug": "development","type": "Development", "title": "", "desc": "Web design for EEZY COOK. Here I have used CSS3 properties to create smooth animations.", "img": "eezy_cook.gif"},
+        "item10":{"slug": "development","type": "Development", "title": "<a  target='_blank' href='https://eezycook.io/'>EEZY COOK</a>", "desc": "Web design for EEZY COOK. Here I have used CSS3 properties to create smooth animations.", "img": "eezy_cook.gif"},
         "item11":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Nature digital painting.", "img": "nature.jpg"},
         "item12":{"slug": "art","type": "Digital Painting", "title": "", "desc": "Tree frog digital painting.", "img": "tree_frog_digital_painting.jpg"},
         "item13":{"slug": "photography","type": "Photography", "title": "", "desc": "Hotel Corridor.", "img": "hotel.jpg"},
