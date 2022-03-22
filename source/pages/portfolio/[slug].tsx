@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
@@ -5,14 +6,16 @@ import Header from '../header';
 import Data from '../../data/data.json';
 
 // https://www.azzerad.com/
+interface InterfaceData { slug: string, desc: string, img: string, title: string, type: string };
 function PortfolioDetail() {
   const router = useRouter();
   const mainData = Data.data;
   let portfolioItem: any;
-  const [data, setFilterData] = useState([]);
+  // const [data, setFilterData] = useState([]);
+  const [data, setFilterData] = useState<[] | InterfaceData>([]);
 
   useEffect(() => {
-    const slugId:any = router.query.slug;
+    const slugId: any = router.query.slug;
 
     if (!!data && slugId) {
       portfolioItem = Object.values(mainData).filter(function (d, i) {
@@ -27,18 +30,18 @@ function PortfolioDetail() {
   return (
     <>
       <Header />
-        <ContentContainer>
-          <div className="left">
-            <em>{data.type}</em>
-            <h2 dangerouslySetInnerHTML={{ __html: data.title }} />
-            <p>{data.desc}</p>
-          </div>
-          <div className="right">
-            <img
-              src={`/assets/img/work/${data.img}`}
-            />
-          </div>
-        </ContentContainer>
+      <ContentContainer>
+        <div className="left">
+          <em>{data.type}</em>
+          <h2 dangerouslySetInnerHTML={{ __html: data.title }} />
+          <p>{data.desc}</p>
+        </div>
+        <div className="right">
+          <img
+            src={`/assets/img/work/${data.img}`}
+          />
+        </div>
+      </ContentContainer>
     </>
   );
 }
