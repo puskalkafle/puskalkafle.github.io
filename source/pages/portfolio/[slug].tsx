@@ -12,7 +12,7 @@ function PortfolioDetail() {
   const mainData = Data.data;
   let portfolioItem: any;
   // const [data, setFilterData] = useState([]);
-  const [data, setFilterData] = useState<[] | InterfaceData>([]);
+  const [data, setFilterData] = useState<{ slug: '', desc: '', img: '', title: '', type: '' } | InterfaceData>({ slug: '', desc: '', img: '', title: '', type: '' });
 
   useEffect(() => {
     const slugId: any = router.query.slug;
