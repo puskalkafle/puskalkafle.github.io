@@ -1,0 +1,18 @@
+'Log files:
+/Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npm-cache/_logs/2025-11-03T18_22_24_181Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: puskal-kafle-website@1.0.0
+Found: react@16.14.0
+node_modules/react
+  react@"^16.13.1" from the root project
+
+Could not resolve dependency:
+peer react@"^17.0.1" from simple-react-lightbox@3.5.4
+node_modules/simple-react-lightbox
+  simple-react-lightbox@"^3.5.4" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

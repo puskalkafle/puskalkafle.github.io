@@ -1,0 +1,173 @@
+0 verbose cli /Users/puskalkafle/.nvm/versions/node/v20.19.5/bin/node /Users/puskalkafle/.nvm/versions/node/v20.19.5/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.5
+3 silly config load:file:/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npmrc
+5 silly config load:file:/Users/puskalkafle/.npmrc
+6 silly config load:file:/Users/puskalkafle/.nvm/versions/node/v20.19.5/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:/Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npm-cache/_logs/2025-11-03T18_22_24_181Z-
+10 verbose logfile /Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npm-cache/_logs/2025-11-03T18_22_24_181Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest @fortawesome/fontawesome-svg-core@1.2.32
+15 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffontawesome-svg-core cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/npm 149ms
+17 http fetch GET 200 https://registry.npmjs.org/@fortawesome%2ffontawesome-svg-core 2019ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffontawesome-svg-core set size:undefined disposed:false
+19 silly fetch manifest @fortawesome/free-brands-svg-icons@5.15.1
+20 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-brands-svg-icons cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/@fortawesome%2ffree-brands-svg-icons 413ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-brands-svg-icons set size:undefined disposed:false
+23 silly fetch manifest @fortawesome/free-regular-svg-icons@5.15.1
+24 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-regular-svg-icons cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/@fortawesome%2ffree-regular-svg-icons 444ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-regular-svg-icons set size:undefined disposed:false
+27 silly fetch manifest @fortawesome/free-solid-svg-icons@5.15.1
+28 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-solid-svg-icons cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/@fortawesome%2ffree-solid-svg-icons 421ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2ffree-solid-svg-icons set size:undefined disposed:false
+31 silly fetch manifest @fortawesome/react-fontawesome@0.1.14
+32 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2freact-fontawesome cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/@fortawesome%2freact-fontawesome 442ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/@fortawesome%2freact-fontawesome set size:undefined disposed:false
+35 silly fetch manifest react@16.14.0
+36 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/react 352ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+39 silly fetch manifest axios@0.21.1
+40 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/axios 37ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/axios set size:undefined disposed:false
+43 silly fetch manifest font-awesome@4.7.0
+44 silly packumentCache full:https://registry.npmjs.org/font-awesome cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/font-awesome 62ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/font-awesome set size:undefined disposed:false
+47 silly fetch manifest gsap@3.9.1
+48 silly packumentCache full:https://registry.npmjs.org/gsap cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/gsap 80ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/gsap set size:undefined disposed:false
+51 silly fetch manifest jquery@3.5.1
+52 silly packumentCache full:https://registry.npmjs.org/jquery cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/jquery 88ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/jquery set size:undefined disposed:false
+55 silly fetch manifest mapbox-gl@1.12.0
+56 silly packumentCache full:https://registry.npmjs.org/mapbox-gl cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/mapbox-gl 877ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/mapbox-gl set size:undefined disposed:false
+59 silly fetch manifest next@10.0.4
+60 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/next 378ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/next set size:undefined disposed:false
+63 silly fetch manifest react-dom@16.14.0
+64 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/react-dom 423ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+67 silly fetch manifest next-images@1.6.2
+68 silly packumentCache full:https://registry.npmjs.org/next-images cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/next-images 867ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/next-images set size:undefined disposed:false
+71 silly fetch manifest webpack@^4.0.0 || ^5.0.0
+72 silly packumentCache full:https://registry.npmjs.org/webpack cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/webpack 170ms (cache miss)
+74 silly packumentCache full:https://registry.npmjs.org/webpack set size:undefined disposed:false
+75 silly fetch manifest next-plugin-svgr@0.0.6
+76 silly packumentCache full:https://registry.npmjs.org/next-plugin-svgr cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/next-plugin-svgr 871ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/next-plugin-svgr set size:undefined disposed:false
+79 silly fetch manifest react-day-picker@7.4.8
+80 silly packumentCache full:https://registry.npmjs.org/react-day-picker cache-miss
+81 http fetch GET 200 https://registry.npmjs.org/react-day-picker 107ms (cache miss)
+82 silly packumentCache full:https://registry.npmjs.org/react-day-picker set size:undefined disposed:false
+83 silly fetch manifest react-grid-system@7.1.1
+84 silly packumentCache full:https://registry.npmjs.org/react-grid-system cache-miss
+85 http fetch GET 200 https://registry.npmjs.org/react-grid-system 1109ms (cache miss)
+86 silly packumentCache full:https://registry.npmjs.org/react-grid-system set size:undefined disposed:false
+87 silly fetch manifest react-gsap@2.2.1
+88 silly packumentCache full:https://registry.npmjs.org/react-gsap cache-miss
+89 http fetch GET 200 https://registry.npmjs.org/react-gsap 914ms (cache miss)
+90 silly packumentCache full:https://registry.npmjs.org/react-gsap set size:undefined disposed:false
+91 silly fetch manifest react-input-range@1.3.0
+92 silly packumentCache full:https://registry.npmjs.org/react-input-range cache-miss
+93 http fetch GET 200 https://registry.npmjs.org/react-input-range 861ms (cache miss)
+94 silly packumentCache full:https://registry.npmjs.org/react-input-range set size:undefined disposed:false
+95 silly fetch manifest react-masonry-css@1.0.14
+96 silly packumentCache full:https://registry.npmjs.org/react-masonry-css cache-miss
+97 http fetch GET 200 https://registry.npmjs.org/react-masonry-css 842ms (cache miss)
+98 silly packumentCache full:https://registry.npmjs.org/react-masonry-css set size:undefined disposed:false
+99 silly fetch manifest react-paginate@6.5.0
+100 silly packumentCache full:https://registry.npmjs.org/react-paginate cache-miss
+101 http fetch GET 200 https://registry.npmjs.org/react-paginate 253ms (cache miss)
+102 silly packumentCache full:https://registry.npmjs.org/react-paginate set size:undefined disposed:false
+103 silly fetch manifest react-query@2.26.2
+104 silly packumentCache full:https://registry.npmjs.org/react-query cache-miss
+105 http fetch GET 200 https://registry.npmjs.org/react-query 202ms (cache miss)
+106 silly packumentCache full:https://registry.npmjs.org/react-query set size:undefined disposed:false
+107 silly fetch manifest react-rating@2.0.5
+108 silly packumentCache full:https://registry.npmjs.org/react-rating cache-miss
+109 http fetch GET 200 https://registry.npmjs.org/react-rating 75ms (cache miss)
+110 silly packumentCache full:https://registry.npmjs.org/react-rating set size:undefined disposed:false
+111 silly fetch manifest react-select@3.1.0
+112 silly packumentCache full:https://registry.npmjs.org/react-select cache-miss
+113 http fetch GET 200 https://registry.npmjs.org/react-select 86ms (cache miss)
+114 silly packumentCache full:https://registry.npmjs.org/react-select set size:undefined disposed:false
+115 silly fetch manifest save@2.4.0
+116 silly packumentCache full:https://registry.npmjs.org/save cache-miss
+117 http fetch GET 200 https://registry.npmjs.org/save 864ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/save set size:undefined disposed:false
+119 silly fetch manifest simple-react-lightbox@3.5.4
+120 silly packumentCache full:https://registry.npmjs.org/simple-react-lightbox cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/simple-react-lightbox 873ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/simple-react-lightbox set size:undefined disposed:false
+123 silly fetch manifest react@^17.0.1
+124 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/react 12ms (cache hit)
+126 silly packumentCache full:https://registry.npmjs.org/react set size:6220657 disposed:false
+127 verbose stack Error: unable to resolve dependency tree
+127 verbose stack     at #failPeerConflict (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1360:25)
+127 verbose stack     at #loadPeerSet (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1326:33)
+127 verbose stack     at async #buildDepStep (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:901:11)
+127 verbose stack     at async Arborist.buildIdealTree (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+127 verbose stack     at async Promise.all (index 1)
+127 verbose stack     at async Arborist.reify (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+127 verbose stack     at async Install.exec (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/lib/commands/install.js:150:5)
+127 verbose stack     at async Npm.exec (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/lib/npm.js:207:9)
+127 verbose stack     at async module.exports (/Users/puskalkafle/.nvm/versions/node/v20.19.5/lib/node_modules/npm/lib/cli/entry.js:74:5)
+128 error code ERESOLVE
+129 error ERESOLVE unable to resolve dependency tree
+130 error
+131 error While resolving: puskal-kafle-website@1.0.0
+131 error Found: react@16.14.0
+131 error node_modules/react
+131 error   react@"^16.13.1" from the root project
+131 error
+131 error Could not resolve dependency:
+131 error peer react@"^17.0.1" from simple-react-lightbox@3.5.4
+131 error node_modules/simple-react-lightbox
+131 error   simple-react-lightbox@"^3.5.4" from the root project
+131 error
+131 error Fix the upstream dependency conflict, or retry
+131 error this command with --force or --legacy-peer-deps
+131 error to accept an incorrect (and potentially broken) dependency resolution.
+132 error
+132 error
+132 error For a full report see:
+132 error /Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npm-cache/_logs/2025-11-03T18_22_24_181Z-eresolve-report.txt
+133 silly unfinished npm timer reify 1762194144457
+134 silly unfinished npm timer reify:loadTrees 1762194144493
+135 silly unfinished npm timer idealTree:buildDeps 1762194144522
+136 silly unfinished npm timer idealTree:#root 1762194144523
+137 verbose cwd /Users/puskalkafle/Documents/Development/puskalkafle.github.io/source
+138 verbose os Darwin 25.0.0
+139 verbose node v20.19.5
+140 verbose npm  v10.8.2
+141 notice
+141 notice New major version of npm available! 10.8.2 -> 11.6.2
+141 notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+141 notice To update run: npm install -g npm@11.6.2
+141 notice  { force: true, [Symbol(proc-log.meta)]: true }
+142 verbose exit 1
+143 verbose code 1
+144 error A complete log of this run can be found in: /Users/puskalkafle/Documents/Development/puskalkafle.github.io/source/.npm-cache/_logs/2025-11-03T18_22_24_181Z-debug-0.log
