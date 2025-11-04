@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "homepage": "./",
   "scripts": {
-    "dev": "next",
-    "dev-inspect": "NODE_OPTIONS='--inspect' next dev",
-    "build": "next build && next export",
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' next",
+    "dev-inspect": "NODE_OPTIONS='--inspect --openssl-legacy-provider' next dev",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build && next export",
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint --ext js,jsx,ts,tsx"
