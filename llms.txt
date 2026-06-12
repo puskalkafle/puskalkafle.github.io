@@ -1,0 +1,44 @@
+# Puskal Kafle
+
+> Puskal Kafle is a UX Engineer based in Kathmandu, Nepal, currently working at ITONICS. He specializes in designing and optimizing user interfaces for web applications — frontend performance, accessibility, and translating design concepts into functional, user-friendly products. He also builds and ships his own products: ProductImageUpscale AI (an AI image upscaler for e-commerce) and a set of production-grade components on the Framer Marketplace.
+
+Primary site: https://puskalkafle.com.np/
+Contact: puskal_kafle@yahoo.com
+
+## Who he is
+
+- Role: UX Engineer (UI/UX design + frontend development)
+- Location: Kathmandu, Nepal
+- Current employer: ITONICS (https://www.itonics-innovation.com/)
+- Previous companies: EB Pearls, Javra Software
+- Skills: UI/UX design, UX research, frontend development, JavaScript/TypeScript, React, CSS architecture, accessibility, performance, Figma, Framer, prototyping, D3/data visualization
+
+## Products he built
+
+- [ProductImageUpscale AI](https://www.productimageupscale.com/): AI photo enhancer and image upscaler for e-commerce. Upscales product images 2x, 4x or 8x while preserving texture, edges and colors; supports JPG/PNG/WebP and batch processing. Free plan and a Pro plan at $19/month.
+- [ProductImageUpscale — Shopify app](https://apps.shopify.com/product-image-upscale-ai): one-click AI upscaling inside the Shopify admin.
+- [Product Image Upscale — WordPress plugin](https://wordpress.org/plugins/product-image-upscale/): the same AI upscaling for WooCommerce/WordPress media.
+
+## Framer Marketplace components
+
+Profile: https://www.framer.com/@puskal-kafle/
+
+- Continuum Timeline
+- Long Image Viewer
+- OrgFlow Pro
+- PDF Viewer Pro
+- Pricing Plan Finder
+- SaaS ROI Calculator
+- Visionary Video Hero
+
+## Case studies
+
+- [Nepal Tourism Board Website Redesign](https://puskalkafle.com.np/work/ntb): 8-week UX project — traveler research (58% felt travel information was scattered), journey mapping, restructured information architecture and a redesigned, mobile-friendly UI for Nepal's official tourism platform.
+- [Cryptocurrency App Concept](https://puskalkafle.com.np/work/crypto): dark-themed mobile app concept — market lists, portfolio risk scoring and trading screens, designed and prototyped in Figma.
+
+## Profiles
+
+- LinkedIn: https://www.linkedin.com/in/puskal/
+- X (Twitter): https://x.com/Puskal
+- Framer: https://www.framer.com/@puskal-kafle/
+- GitHub: https://github.com/puskalkafle
