@@ -11,7 +11,7 @@ Contact: puskal_kafle@yahoo.com
 - Location: Kathmandu, Nepal
 - Current employer: ITONICS (https://www.itonics-innovation.com/)
 - Previous companies: EB Pearls, Javra Software
-- Skills: UI/UX design, UX research, frontend development, JavaScript/TypeScript, React, CSS architecture, accessibility, performance, Figma, Framer, prototyping, D3/data visualization
+- Skills: UI/UX design, UX research, frontend development, JavaScript/TypeScript, Angular, Storybook, CSS architecture, accessibility, performance, Figma, Framer, prototyping, D3/data visualization
 
 ## Products he built
 
