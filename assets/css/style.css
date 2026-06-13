@@ -10,6 +10,7 @@
   --muted: #94917f;
   --line: rgba(236, 233, 226, 0.14);
   --accent: #d9f74a;
+  --accent-soft: #b3bf69;
   --accent-ink: #101206;
   --display: 'Syne', sans-serif;
   --body: 'Space Grotesk', sans-serif;
@@ -124,7 +125,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   font-family: var(--display); font-weight: 800;
   font-size: 20px; letter-spacing: -0.02em;
 }
-.nav__logo sup { color: var(--accent); font-size: 11px; }
+.nav__logo sup { color: var(--accent-soft); font-size: 11px; }
 .nav__links { display: flex; gap: clamp(16px, 3vw, 36px); }
 .nav__links a {
   font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
@@ -281,7 +282,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   text-transform: uppercase; letter-spacing: 0.02em;
   padding-right: 28px;
 }
-.marquee em { color: var(--accent); font-style: normal; padding-right: 28px; }
+.marquee em { color: var(--accent-soft); font-style: normal; padding-right: 28px; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* --- work list ---------------------------------------------------------- */
@@ -359,7 +360,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   font-size: clamp(26px, 4vw, 48px); letter-spacing: -0.02em;
   line-height: 1.1; margin: 18px 0;
 }
-.product__intro h3 em { font-style: normal; color: var(--accent); }
+.product__intro h3 em { font-style: normal; color: var(--accent-soft); }
 .product__intro p { color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); }
 
 .compare {
@@ -425,7 +426,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   transition: background 0.45s var(--ease);
 }
 .eco-card:hover { background: #1c1c17; }
-.eco-card__plat { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.eco-card__plat { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-soft); }
 .eco-card h4 {
   font-family: var(--display); font-weight: 700;
   font-size: clamp(20px, 1.9vw, 26px); letter-spacing: -0.01em; line-height: 1.15;
@@ -581,7 +582,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   line-height: 1.25; letter-spacing: -0.01em;
   margin-bottom: 28px;
 }
-.about__body p.lead em { font-style: normal; color: var(--accent); }
+.about__body p.lead em { font-style: normal; color: var(--accent-soft); }
 .about__body > p { color: var(--muted); max-width: 640px; margin-bottom: 18px; }
 .about__skills {
   display: flex; flex-wrap: wrap; gap: 10px;
@@ -594,9 +595,9 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   color: var(--muted);
   transition: border-color 0.3s, color 0.3s;
 }
-.about__skills li:hover { border-color: var(--accent); color: var(--accent); }
+.about__skills li:hover { border-color: var(--accent-soft); color: var(--accent-soft); }
 .testimonial {
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--accent-soft);
   padding: 8px 0 8px 24px;
   margin-top: 36px;
   max-width: 640px;
@@ -654,7 +655,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   margin-bottom: 12px; color: var(--ink); font-weight: 500;
 }
 .footer__col a { display: block; padding: 3px 0; transition: color 0.3s; }
-.footer__col a:hover { color: var(--accent); }
+.footer__col a:hover { color: var(--accent-soft); }
 .footer__bottom {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
   margin-top: 48px;
@@ -662,7 +663,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   letter-spacing: 0.06em;
 }
 .totop { letter-spacing: 0.12em; text-transform: uppercase; }
-.totop:hover { color: var(--accent); }
+.totop:hover { color: var(--accent-soft); }
 
 /* ============================================================
    CASE STUDY PAGES
@@ -677,7 +678,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   margin-bottom: 32px;
   transition: color 0.3s;
 }
-.case-hero__back:hover { color: var(--accent); }
+.case-hero__back:hover { color: var(--accent-soft); }
 .case-hero h1 {
   font-family: var(--display); font-weight: 800;
   font-size: clamp(38px, 8vw, 120px);
@@ -714,7 +715,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 }
 .case-grid h2 small {
   display: block; font-family: var(--body); font-weight: 400;
-  font-size: 12px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.18em; color: var(--accent-soft); text-transform: uppercase;
   margin-bottom: 10px;
 }
 .case-body p { color: #c9c6bc; margin-bottom: 18px; max-width: 70ch; }
@@ -727,7 +728,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   color: #c9c6bc;
 }
 .case-body li::before {
-  content: '→'; position: absolute; left: 0; color: var(--accent);
+  content: '→'; position: absolute; left: 0; color: var(--accent-soft);
 }
 .case-stats { display: flex; flex-wrap: wrap; gap: clamp(24px, 5vw, 72px); margin: 28px 0; }
 .case-img-grid {
@@ -743,7 +744,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .scroll-frame {
   overflow-y: auto; max-height: 78vh;
   border: 1px solid var(--line);
-  scrollbar-width: thin; scrollbar-color: var(--accent) transparent;
+  scrollbar-width: thin; scrollbar-color: var(--accent-soft) transparent;
 }
 .scroll-frame img { width: 100%; border-radius: 0; }
 .phone-grid {
