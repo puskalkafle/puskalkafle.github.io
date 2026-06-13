@@ -162,7 +162,7 @@
     addEventListener('scroll', () => {
       const y = scrollY;
       nav.style.transform = y > 140 && y > last ? 'translateY(-110%)' : 'translateY(0)';
-      nav.style.transition = 'transform 0.45s cubic-bezier(0.65,0.05,0,1)';
+      nav.classList.toggle('scrolled', y > 40);
       last = y;
     }, { passive: true });
   }
