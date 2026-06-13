@@ -19,7 +19,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 html.lenis { height: auto; scroll-behavior: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto; }
 
@@ -214,7 +214,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .hero__title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(64px, 14.5vw, 230px);
+  font-size: clamp(44px, 13vw, 230px);
   line-height: 0.88;
   letter-spacing: -0.04em;
   text-transform: uppercase;
