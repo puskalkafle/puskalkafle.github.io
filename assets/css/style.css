@@ -715,6 +715,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-bottom: clamp(40px, 8vh, 90px);
 }
 .footer__mail span { transition: color 0.4s; }
+.footer__mail .nobr { white-space: nowrap; }
 .footer__mail:hover span { color: var(--accent); }
 .footer__mail .arrow { display: inline-block; transition: transform 0.5s var(--ease); }
 .footer__mail:hover .arrow { transform: translate(0.06em, -0.06em) rotate(45deg); }
