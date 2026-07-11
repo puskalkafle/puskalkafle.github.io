@@ -36,6 +36,9 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
 ::selection { background: var(--accent); color: var(--accent-ink); }
 
 img { display: block; max-width: 100%; }
@@ -375,7 +378,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-top: 10px;
   max-width: 56ch;
 }
-.work-item__tags { font-size: 0.8125rem; color: var(--muted); text-align: right; letter-spacing: 0.06em; }
+.work-item__tags { font-size: 0.8125rem; color: var(--muted); text-align: right; }
 .work-item__year { font-size: 0.8125rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .work-item__arrow {
   width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%;
@@ -401,6 +404,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .product__intro h3 em { font-style: normal; color: var(--accent-soft); }
 .product__intro p { color: var(--ink-body); font-size: clamp(0.9375rem, 1.4vw, 1.125rem); }
+.product__intro p strong { color: var(--ink); font-weight: 500; } /* Space Grotesk ships 400/500 only — avoids faux bold */
 
 .compare {
   position: relative;
@@ -673,7 +677,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-bottom: 14px;
 }
 .testimonial cite {
-  font-style: normal; font-size: 0.8125rem; letter-spacing: 0.04em;
+  font-style: normal; font-size: 0.8125rem;
   display: flex; align-items: center; gap: 14px;
   color: var(--ink);
 }
@@ -720,7 +724,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   padding-top: 28px;
   font-size: 0.8125rem; color: var(--muted);
 }
-.footer__col h5 {
+.footer__col-title {
   font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase;
   margin-bottom: 12px; color: var(--ink); font-weight: 500;
 }
@@ -730,7 +734,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
   margin-top: 48px;
   font-size: 0.75rem; color: var(--muted);
-  letter-spacing: 0.06em;
 }
 .totop { letter-spacing: 0.12em; text-transform: uppercase; }
 .totop:hover { color: var(--accent-soft); }
@@ -819,7 +822,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .case-img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .case-img-grid img, .scroll-frame { border-radius: 8px; width: 100%; }
 .case-img-grid figure { margin: 0; }
-.case-img-grid figcaption { font-size: 0.8125rem; color: var(--muted); padding-top: 10px; letter-spacing: 0.06em; }
+.case-img-grid figcaption { font-size: 0.8125rem; color: var(--muted); padding-top: 10px; }
 .scroll-frame {
   overflow-y: auto; max-height: 78vh;
   border: 1px solid var(--line);
