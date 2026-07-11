@@ -638,15 +638,19 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   object-fit: cover;
 }
 
-/* curtain reveal — image rises into the capsule while settling from a zoom.
-   The container itself stays unclipped: IntersectionObserver ignores
-   elements whose own clip-path hides them, so the child is animated instead. */
+/* curtain reveal — the image stays put and is uncovered bottom-to-top
+   while settling from a zoom. The container itself stays unclipped:
+   IntersectionObserver ignores elements whose own clip-path hides them,
+   so the child is animated instead. */
 .clip-reveal img {
-  transform: translateY(101%) scale(1.25);
-  transition: transform 1.4s var(--ease);
+  clip-path: inset(100% 0 0 0);
+  transform: scale(1.25);
+  transition: clip-path 1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .clip-reveal.in-view img {
-  transform: translateY(0) scale(1);
+  clip-path: inset(0 0 0 0);
+  transform: scale(1);
 }
 .about__body p.lead {
   font-family: var(--display); font-weight: 700;

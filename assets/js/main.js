@@ -116,3 +116,24 @@
     });
   }
 })();
+
+/* ---------- portrait: WebGL hover displacement (lazy) ----------
+   The effect module (and its texture download) only loads when the
+   portrait scrolls near the viewport, and only for desktop pointers
+   without reduced-motion. */
+(() => {
+  const fig = document.querySelector('.about__portrait');
+  if (!fig) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  const io = new IntersectionObserver((entries) => {
+    if (!entries.some((e) => e.isIntersecting)) return;
+    io.disconnect();
+    const s = document.createElement('script');
+    s.src = 'assets/js/portrait-gl.js';
+    s.defer = true;
+    document.head.appendChild(s);
+  }, { rootMargin: '600px' });
+  io.observe(fig);
+})();
