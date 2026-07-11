@@ -7,7 +7,7 @@
   <meta name="description" content="Case study: a dark-themed cryptocurrency app concept — market lists, portfolio risk scoring and trading screens. Visual design, UI design and Figma prototyping by Puskal Kafle." />
   <meta name="author" content="Puskal Kafle" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#0e0e0c" />
+  <meta name="theme-color" content="#181712" />
   <link rel="canonical" href="https://puskalkafle.com.np/work/crypto" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   <meta property="og:title" content="Cryptocurrency App Concept — UI Case Study" />
@@ -50,30 +50,38 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="grain" aria-hidden="true"></div>
-  <div class="cursor" aria-hidden="true"></div>
-  <div class="cursor-tag" aria-hidden="true"></div>
 
   <header class="nav">
     <a class="nav__logo" href="../index.html">PK</a>
-    <nav class="nav__links" aria-label="Primary">
+    <nav class="nav__links" id="primary-nav" aria-label="Primary">
       <a href="../index.html#work">Work</a>
       <a href="../index.html#product">Product</a>
       <a href="../index.html#components">Components</a>
       <a href="../index.html#about">About</a>
+      <a href="../index.html#archive">Archive</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
     <span class="nav__time" data-clock>Kathmandu</span>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <main>
+  <main id="main">
     <section class="case-hero">
-      <a class="case-hero__back" href="../index.html#work">← All work</a>
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <a href="../index.html#work">Work</a> /
+        <span aria-current="page">Crypto App Concept</span>
+      </nav>
       <h1 class="fade in-view">Crypto App<br /><em>Concept Redesign</em></h1>
       <div class="case-meta fade in-view d2">
         <div><b>Role</b><span>Visual Design · UI Design</span></div>
@@ -124,9 +132,9 @@
       </div>
     </section>
 
-    <a class="case-next" href="ntb.html">
+    <a class="case-next" href="piu.html">
       <small>Next case</small>
-      <strong>Nepal Tourism Board →</strong>
+      <strong>ProductImageUpscale →</strong>
     </a>
   </main>
 
@@ -138,7 +146,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

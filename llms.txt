@@ -35,6 +35,7 @@ Profile: https://www.framer.com/@puskal-kafle/
 
 - [Nepal Tourism Board Website Redesign](https://puskalkafle.com.np/work/ntb): 8-week UX project — traveler research (58% felt travel information was scattered), journey mapping, restructured information architecture and a redesigned, mobile-friendly UI for Nepal's official tourism platform.
 - [Cryptocurrency App Concept](https://puskalkafle.com.np/work/crypto): dark-themed mobile app concept — market lists, portfolio risk scoring and trading screens, designed and prototyped in Figma.
+- [ProductImageUpscale AI — Founder Case Study](https://puskalkafle.com.np/work/piu): how the AI upscaler was designed, built and shipped solo across web, Shopify and WordPress.
 
 ## Profiles
 

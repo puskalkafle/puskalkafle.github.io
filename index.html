@@ -10,7 +10,7 @@
   <meta name="keywords" content="Puskal Kafle, UX Engineer, UI/UX Designer, Frontend Developer, Kathmandu, Nepal, Framer components, ProductImageUpscale, AI image upscaler, product designer" />
   <meta name="geo.region" content="NP" />
   <meta name="geo.placename" content="Kathmandu" />
-  <meta name="theme-color" content="#0e0e0c" />
+  <meta name="theme-color" content="#181712" />
   <link rel="canonical" href="https://puskalkafle.com.np/" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <meta property="og:title" content="Puskal Kafle — UX Engineer &amp; Product Builder" />
@@ -30,7 +30,7 @@
   <meta name="twitter:image" content="https://puskalkafle.com.np/assets/img/og.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -92,26 +92,24 @@
 </head>
 <body>
 
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader__name"><span>Puskal Kafle</span></div>
-    <div class="preloader__count">0</div>
-  </div>
+  <a class="skip-link" href="#top">Skip to content</a>
 
   <div class="grain" aria-hidden="true"></div>
-  <div class="cursor" aria-hidden="true"></div>
-  <div class="cursor-tag" aria-hidden="true"></div>
 
   <header class="nav">
     <a class="nav__logo" href="#top">PK</a>
-    <nav class="nav__links" aria-label="Primary">
+    <nav class="nav__links" id="primary-nav" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#product">Product</a>
       <a href="#components">Components</a>
-      <a href="#archive">Archive</a>
       <a href="#about">About</a>
+      <a href="#archive">Archive</a>
       <a href="#contact">Contact</a>
     </nav>
     <span class="nav__time" data-clock>Kathmandu</span>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main id="top">
@@ -119,19 +117,21 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="hero__meta">
-        <p class="fade in-view">UX Engineer based in Kathmandu, Nepal —<br />
-          <strong>designing interfaces, engineering frontends, shipping products.</strong></p>
+        <p class="fade in-view"><strong>Puskal Kafle</strong> — UX Engineer, Kathmandu, Nepal</p>
         <p class="hero__status fade in-view d2"><i></i> Open for collaborations</p>
       </div>
-      <h1 class="hero__title" aria-label="Puskal Kafle">
-        <span class="reveal in-view"><span>Puskal</span></span>
-        <span class="reveal in-view"><span><span class="alt">Kafle</span><span class="accent">.</span></span></span>
+      <h1 class="hero__title fade in-view">
+        I design interfaces,<br />then <span class="alt">build</span> them<span class="accent">.</span>
       </h1>
+      <p class="hero__proof fade in-view d1">
+        <b>UX Engineer at ITONICS</b> · Founder of <b>ProductImageUpscale AI</b> —
+        shipped solo across web, Shopify and WordPress · <b>7 components</b> on the Framer Marketplace.
+      </p>
+      <div class="hero__cta fade in-view d2">
+        <a class="btn-pill btn-pill--solid" href="#work">View selected work</a>
+        <a class="btn-pill" href="#contact">Get in touch</a>
+      </div>
       <div class="hero__bottom">
-        <a class="scroll-cue" href="#work">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12m0 0L1 7m6 6 6-6" stroke="currentColor" stroke-width="1.5"/></svg>
-          Selected work
-        </a>
         <span>UX · Frontend · Framer · AI Products</span>
         <span>©<span data-year>2026</span></span>
       </div>
@@ -161,61 +161,65 @@
 
       <ul class="work-list">
         <li class="work-item fade">
-          <a href="work/ntb.html" data-preview="ntb" data-cursor="View case">
+          <a href="work/ntb.html">
             <span class="work-item__num">01</span>
-            <span class="work-item__name">Nepal Tourism Board</span>
+            <span class="work-item__thumb" aria-hidden="true"><img src="assets/img/projects/ntb-cover.png" alt="" loading="lazy" /></span>
+            <span class="work-item__name">Nepal Tourism Board
+              <span class="work-item__desc">Full UX process — traveler research, a rebuilt information architecture and a redesigned UI for Nepal's tourism gateway.</span>
+            </span>
             <span class="work-item__tags">UX Research · UI Design<br />Website Redesign</span>
             <span class="work-item__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
             </span>
           </a>
         </li>
         <li class="work-item fade">
-          <a href="work/crypto.html" data-preview="crypto" data-cursor="View case">
+          <a href="work/crypto.html">
             <span class="work-item__num">02</span>
-            <span class="work-item__name">Crypto App Concept</span>
+            <span class="work-item__thumb" aria-hidden="true"><img src="assets/img/projects/crypto-2.png" alt="" loading="lazy" /></span>
+            <span class="work-item__name">Crypto App Concept
+              <span class="work-item__desc">Dark fintech mobile UI — portfolio tracking clarified through layout balance and strict color hierarchy.</span>
+            </span>
             <span class="work-item__tags">Visual Design · Figma<br />Mobile UI</span>
             <span class="work-item__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
             </span>
           </a>
         </li>
         <li class="work-item fade">
-          <a href="#product" data-preview="piu" data-cursor="Explore">
+          <a href="work/piu.html">
             <span class="work-item__num">03</span>
-            <span class="work-item__name">ProductImageUpscale</span>
+            <span class="work-item__thumb" aria-hidden="true"><img src="assets/img/projects/piu-after.png" alt="" loading="lazy" /></span>
+            <span class="work-item__name">ProductImageUpscale
+              <span class="work-item__desc">Founder-built AI upscaler for e-commerce — designed, engineered and shipped solo across three platforms.</span>
+            </span>
             <span class="work-item__tags">Founder · SaaS · AI<br />Web · Shopify · WordPress</span>
             <span class="work-item__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
             </span>
           </a>
         </li>
       </ul>
-
-      <div class="work-preview" aria-hidden="true">
-        <img src="assets/img/projects/ntb-cover.png" alt="" data-key="ntb" />
-        <img src="assets/img/projects/crypto-2.png" alt="" data-key="crypto" />
-        <img src="assets/img/projects/piu-after.png" alt="" data-key="piu" />
-      </div>
     </section>
 
     <!-- ============ PRODUCT: ProductImageUpscale ============ -->
     <section class="section product" id="product">
       <div class="section__head">
         <h2 class="section__title">Product</h2>
-        <span class="section__count">Founder & Builder</span>
+        <span class="section__count">(01 product · 3 platforms)</span>
       </div>
 
       <div class="product__intro">
-        <span class="label fade">SaaS · productimageupscale.com</span>
+        <span class="label fade">Founder · SaaS · productimageupscale.com</span>
         <h3 class="fade d1">ProductImageUpscale<em> AI</em> — turning ordinary product photos into high-converting assets.</h3>
-        <p class="fade d2">An AI photo enhancer and image upscaler built for e-commerce. It increases
-          resolution up to 8× while recovering texture and detail — fabrics, jewelry, edges, colors —
-          with batch processing across entire catalogs. Designed, built and shipped end-to-end:
-          the web platform, the Shopify app and the WordPress plugin.</p>
+        <p class="fade d2"><strong>Designed, built and shipped solo</strong> — the web platform, the Shopify app
+          and the WordPress plugin. An AI photo enhancer for e-commerce that increases resolution
+          up to 8× while recovering texture and detail — fabrics, jewelry, edges, colors —
+          with batch processing across entire catalogs.</p>
       </div>
 
-      <div class="compare fade" data-cursor="Drag" aria-label="Before and after upscaling comparison — drag to compare">
+      <div class="compare fade" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+        aria-label="Before and after upscaling comparison — drag or use arrow keys to compare">
         <img class="compare__before" src="assets/img/projects/piu-before.png" alt="Original low resolution product photo, before AI enhancement" />
         <div class="compare__after-wrap">
           <img src="assets/img/projects/piu-after.png" alt="AI upscaled product photo with recovered fabric texture" />
@@ -260,41 +264,48 @@
         <div class="stat fade d1"><b>3</b><span>Platforms — Web · Shopify · WP</span></div>
         <div class="stat fade d2"><b>1</b><span>Designer-engineer behind it</span></div>
       </div>
+
+      <div class="components__foot fade">
+        <a class="btn-pill" href="work/piu.html">
+          Read the build story
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
     </section>
 
     <!-- ============ FRAMER COMPONENTS ============ -->
     <section class="section" id="components">
       <div class="section__head">
-        <h2 class="section__title">Framer<br />Marketplace</h2>
+        <h2 class="section__title">Framer<br />Components</h2>
         <span class="section__count">(07)</span>
       </div>
 
       <ul class="comp-list">
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/pdf-viewer-pro/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/pdf-viewer-pro/" target="_blank" rel="noopener">
           <span class="comp-item__num">01</span><span class="comp-item__name">PDF Viewer Pro</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/orgflow-pro/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/orgflow-pro/" target="_blank" rel="noopener">
           <span class="comp-item__num">02</span><span class="comp-item__name">OrgFlow Pro</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/continuum-timeline/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/continuum-timeline/" target="_blank" rel="noopener">
           <span class="comp-item__num">03</span><span class="comp-item__name">Continuum Timeline</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/saas-roi-calculator/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/saas-roi-calculator/" target="_blank" rel="noopener">
           <span class="comp-item__num">04</span><span class="comp-item__name">SaaS ROI Calculator</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/pricing-plan-finder/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/pricing-plan-finder/" target="_blank" rel="noopener">
           <span class="comp-item__num">05</span><span class="comp-item__name">Pricing Plan Finder</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/long-image-viewer/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/long-image-viewer/" target="_blank" rel="noopener">
           <span class="comp-item__num">06</span><span class="comp-item__name">Long Image Viewer</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
-        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/visionary-video-hero/" target="_blank" rel="noopener" data-cursor="Marketplace">
+        <li class="comp-item fade"><a href="https://www.framer.com/marketplace/components/visionary-video-hero/" target="_blank" rel="noopener">
           <span class="comp-item__num">07</span><span class="comp-item__name">Visionary Video Hero</span><span class="comp-item__type">Component</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14 14 2m0 0H4m10 0v10" stroke="currentColor" stroke-width="1.5"/></svg></a>
         </li>
@@ -308,67 +319,11 @@
       </div>
     </section>
 
-    <!-- ============ ARCHIVE ============ -->
-    <section class="section" id="archive">
-      <div class="section__head">
-        <h2 class="section__title">Archive</h2>
-        <span class="section__count">2016 — 2021</span>
-      </div>
-
-      <div class="archive__rail" data-cursor="Drag">
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/HomeDesktopHD.jpg" alt="Frostar Themes website" loading="lazy" /></figure>
-          <figcaption><span>Frostar Themes</span><i>WordPress</i></figcaption>
-        </figure>
-        <figure class="archive-card fade d1">
-          <figure><img src="assets/img/work/frostarthemes-demo-frostar_startup.jpg" alt="Startup premium WordPress theme" loading="lazy" /></figure>
-          <figcaption><span>Startup Theme</span><i>WordPress</i></figcaption>
-        </figure>
-        <figure class="archive-card fade d2">
-          <figure><img src="assets/img/work/eezy_cook.gif" alt="EEZY COOK web design with CSS animations" loading="lazy" /></figure>
-          <figcaption><span>EEZY COOK</span><i>Web Design</i></figcaption>
-        </figure>
-        <figure class="archive-card fade d3">
-          <figure><img src="assets/img/work/family_tree.gif" alt="Family Tree visualization app built with D3" loading="lazy" /></figure>
-          <figcaption><span>Family Tree App</span><i>D3 · Electron · Ionic</i></figcaption>
-        </figure>
-        <figure class="archive-card fade d4">
-          <figure><img src="assets/img/work/Company_Active.jpg" alt="Web design for Bit Roshi, Sydney" loading="lazy" /></figure>
-          <figcaption><span>Bit Roshi</span><i>Web Design · Adobe XD</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/nk_new.jpg" alt="Nicole Kidman digital painting" loading="lazy" /></figure>
-          <figcaption><span>Portrait Study</span><i>Digital Painting</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/tree_frog_digital_painting.jpg" alt="Tree frog digital painting" loading="lazy" /></figure>
-          <figcaption><span>Tree Frog</span><i>Digital Painting</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/abstract_illustration.jpg" alt="Abstract illustration" loading="lazy" /></figure>
-          <figcaption><span>Abstract Forms</span><i>Illustration</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/tilicho.jpg" alt="Way to Tilicho Lake" loading="lazy" /></figure>
-          <figcaption><span>Way to Tilicho</span><i>Photography</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/nightsky.jpg" alt="Kathmandu sky in the evening" loading="lazy" /></figure>
-          <figcaption><span>Kathmandu Nights</span><i>Photography</i></figcaption>
-        </figure>
-        <figure class="archive-card fade">
-          <figure><img src="assets/img/work/hotel.jpg" alt="Hotel corridor photograph" loading="lazy" /></figure>
-          <figcaption><span>Corridor</span><i>Photography</i></figcaption>
-        </figure>
-      </div>
-      <p class="archive__hint">( Drag to explore — design, code, paint, shoot )</p>
-    </section>
-
     <!-- ============ ABOUT ============ -->
-    <section class="section" id="about">
+    <section class="section section--alt" id="about">
       <div class="section__head">
         <h2 class="section__title">About</h2>
-        <span class="section__count">Kathmandu, NP</span>
+        <span class="section__count">(Kathmandu, NP)</span>
       </div>
 
       <div class="about__grid">
@@ -401,6 +356,69 @@
       </div>
     </section>
 
+    <!-- ============ ARCHIVE ============ -->
+    <section class="section" id="archive">
+      <div class="section__head">
+        <h2 class="section__title">Archive</h2>
+        <span class="section__count">(2016 — 2021)</span>
+      </div>
+
+      <div class="chips" role="group" aria-label="Filter archive">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="work" aria-pressed="false">Design &amp; Code</button>
+        <button class="chip" data-filter="paint" aria-pressed="false">Paintings</button>
+        <button class="chip" data-filter="photo" aria-pressed="false">Photography</button>
+      </div>
+
+      <div class="archive__rail">
+        <figure class="archive-card fade" data-cat="work">
+          <figure><img src="assets/img/work/HomeDesktopHD.jpg" alt="Frostar Themes website" loading="lazy" /></figure>
+          <figcaption><span>Frostar Themes</span><i>WordPress</i></figcaption>
+        </figure>
+        <figure class="archive-card fade d1" data-cat="work">
+          <figure><img src="assets/img/work/frostarthemes-demo-frostar_startup.jpg" alt="Startup premium WordPress theme" loading="lazy" /></figure>
+          <figcaption><span>Startup Theme</span><i>WordPress</i></figcaption>
+        </figure>
+        <figure class="archive-card fade d2" data-cat="work">
+          <figure><img src="assets/img/work/eezy_cook.gif" alt="EEZY COOK web design with CSS animations" loading="lazy" /></figure>
+          <figcaption><span>EEZY COOK</span><i>Web Design</i></figcaption>
+        </figure>
+        <figure class="archive-card fade d3" data-cat="work">
+          <figure><img src="assets/img/work/family_tree.gif" alt="Family Tree visualization app built with D3" loading="lazy" /></figure>
+          <figcaption><span>Family Tree App</span><i>D3 · Electron · Ionic</i></figcaption>
+        </figure>
+        <figure class="archive-card fade d4" data-cat="work">
+          <figure><img src="assets/img/work/Company_Active.jpg" alt="Web design for Bit Roshi, Sydney" loading="lazy" /></figure>
+          <figcaption><span>Bit Roshi</span><i>Web Design · Adobe XD</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="paint">
+          <figure><img src="assets/img/work/nk_new.jpg" alt="Nicole Kidman digital painting" loading="lazy" /></figure>
+          <figcaption><span>Portrait Study</span><i>Digital Painting</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="paint">
+          <figure><img src="assets/img/work/tree_frog_digital_painting.jpg" alt="Tree frog digital painting" loading="lazy" /></figure>
+          <figcaption><span>Tree Frog</span><i>Digital Painting</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="paint">
+          <figure><img src="assets/img/work/abstract_illustration.jpg" alt="Abstract illustration" loading="lazy" /></figure>
+          <figcaption><span>Abstract Forms</span><i>Illustration</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="photo">
+          <figure><img src="assets/img/work/tilicho.jpg" alt="Way to Tilicho Lake" loading="lazy" /></figure>
+          <figcaption><span>Way to Tilicho</span><i>Photography</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="photo">
+          <figure><img src="assets/img/work/nightsky.jpg" alt="Kathmandu sky in the evening" loading="lazy" /></figure>
+          <figcaption><span>Kathmandu Nights</span><i>Photography</i></figcaption>
+        </figure>
+        <figure class="archive-card fade" data-cat="photo">
+          <figure><img src="assets/img/work/hotel.jpg" alt="Hotel corridor photograph" loading="lazy" /></figure>
+          <figcaption><span>Corridor</span><i>Photography</i></figcaption>
+        </figure>
+      </div>
+      <p class="archive__hint">( Drag sideways to explore )</p>
+    </section>
+
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -409,22 +427,29 @@
     <a class="footer__mail fade d1" href="mailto:puskal_kafle@yahoo.com">
       <span>Let's talk</span> <span class="arrow">↗</span>
     </a>
+    <p class="footer__avail fade d2">Open to collaborations — UX engineering, product design and Framer work.</p>
     <div class="footer__grid">
       <div class="footer__col">
         <h5>Socials</h5>
-        <a href="https://www.linkedin.com/in/puskal/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://x.com/Puskal" target="_blank" rel="noopener">X / Twitter</a>
-        <a href="https://www.framer.com/@puskal-kafle/" target="_blank" rel="noopener">Framer</a>
+        <a href="https://www.linkedin.com/in/puskal/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://x.com/Puskal" target="_blank" rel="noopener">X / Twitter ↗</a>
+        <a href="https://www.framer.com/@puskal-kafle/" target="_blank" rel="noopener">Framer ↗</a>
+      </div>
+      <div class="footer__col">
+        <h5>Case studies</h5>
+        <a href="work/ntb.html">Nepal Tourism Board</a>
+        <a href="work/crypto.html">Crypto App Concept</a>
+        <a href="work/piu.html">ProductImageUpscale</a>
       </div>
       <div class="footer__col">
         <h5>Product</h5>
-        <a href="https://www.productimageupscale.com/" target="_blank" rel="noopener">ProductImageUpscale AI</a>
-        <a href="https://apps.shopify.com/product-image-upscale-ai" target="_blank" rel="noopener">Shopify App</a>
-        <a href="https://wordpress.org/plugins/product-image-upscale/" target="_blank" rel="noopener">WordPress Plugin</a>
+        <a href="https://www.productimageupscale.com/" target="_blank" rel="noopener">ProductImageUpscale AI ↗</a>
+        <a href="https://apps.shopify.com/product-image-upscale-ai" target="_blank" rel="noopener">Shopify App ↗</a>
+        <a href="https://wordpress.org/plugins/product-image-upscale/" target="_blank" rel="noopener">WordPress Plugin ↗</a>
       </div>
       <div class="footer__col">
         <h5>More</h5>
-        <a href="https://drive.google.com/file/d/1pb3wohwSecyV6GMc6WmSKlu-hz0RoU-j/view?usp=drive_link" target="_blank" rel="noopener">Résumé</a>
+        <a href="https://drive.google.com/file/d/1pb3wohwSecyV6GMc6WmSKlu-hz0RoU-j/view?usp=drive_link" target="_blank" rel="noopener">Résumé ↗</a>
         <a href="mailto:puskal_kafle@yahoo.com">puskal_kafle@yahoo.com</a>
       </div>
     </div>
@@ -435,7 +460,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
