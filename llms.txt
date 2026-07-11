@@ -3,15 +3,24 @@
 > Puskal Kafle is a UX Engineer based in Kathmandu, Nepal, currently working at ITONICS. He specializes in designing and optimizing user interfaces for web applications — frontend performance, accessibility, and translating design concepts into functional, user-friendly products. He also builds and ships his own products: ProductImageUpscale AI (an AI image upscaler for e-commerce) and a set of production-grade components on the Framer Marketplace.
 
 Primary site: https://puskalkafle.com.np/
+Résumé: https://puskalkafle.com.np/resume (PDF: https://puskalkafle.com.np/assets/Puskal_Kafle_Resume.pdf)
 Contact: puskal_kafle@yahoo.com
 
 ## Who he is
 
-- Role: UX Engineer (UI/UX design + frontend development)
+- Role: Senior Frontend Engineer · UI/UX (brands himself as a UX Engineer — UI/UX design + frontend development)
 - Location: Kathmandu, Nepal
 - Current employer: ITONICS (https://www.itonics-innovation.com/)
-- Previous companies: EB Pearls, Javra Software
-- Skills: UI/UX design, UX research, frontend development, JavaScript/TypeScript, Angular, Storybook, CSS architecture, accessibility, performance, Figma, Framer, prototyping, D3/data visualization
+- Previous companies: Javra Software, EB Pearls
+- Skills: UI/UX design, UX research, frontend development, JavaScript/TypeScript, Angular, RxJS, Storybook, CSS architecture, accessibility (WCAG), frontend performance, Figma, Framer, prototyping, D3/data visualization
+- Education: Bachelor in Computer Engineering, Kathmandu University
+
+## Work history (from résumé)
+
+- Senior Frontend Engineer, ITONICS — Kathmandu, 04/2022–present. Designs and develops responsive UIs in Angular/TypeScript for an enterprise innovation-management platform, builds reusable documented components, unit testing, prototyping, Hotjar-driven UX analysis.
+- Frontend Developer, ITONICS — 08/2016–04/2022. Designed UIs and specified frontend tasks for an enterprise AI-powered innovation-management platform used by companies like Adidas, Siemens and Toyota; improved frontend performance 20–30% and raised accessibility; enhanced theming architecture.
+- Junior Frontend Developer, Javra Software — Lalitpur, 08/2015–08/2016. Hybrid mobile app (Ionic/PhoneGap), ES6 frontend features.
+- Junior Web Designer, EB Pearls — Lalitpur, 05/2014–07/2015. Responsive client websites (HTML/CSS/JS, Bootstrap, jQuery), CMS integration.
 
 ## Products he built
 

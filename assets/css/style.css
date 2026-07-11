@@ -136,7 +136,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .nav.open .nav__toggle span:nth-child(2) { opacity: 0; }
 .nav.open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .nav__toggle { display: flex; }
   .nav__time { display: none; }
   .nav__links {
@@ -164,6 +164,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .nav.open .nav__links a:nth-child(4) { transition-delay: 0.12s; }
   .nav.open .nav__links a:nth-child(5) { transition-delay: 0.16s; }
   .nav.open .nav__links a:nth-child(6) { transition-delay: 0.2s; }
+  .nav.open .nav__links a:nth-child(7) { transition-delay: 0.24s; }
 }
 
 /* --- generic section scaffolding ------------------------------------ */
@@ -492,6 +493,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   font-family: var(--display); font-weight: 800;
   font-size: clamp(2.125rem, 5vw, 4rem); letter-spacing: -0.02em;
   color: var(--ink); line-height: 1;
+  /* optical alignment: Syne digits carry ~0.03em left side bearing */
+  margin-left: -0.035em;
 }
 .stat span { font-size: 0.8125rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
 @media (max-width: 860px) {
