@@ -315,7 +315,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   white-space: nowrap;
 }
 .marquee__track {
-  display: inline-flex; gap: 0;
+  display: inline-flex; align-items: center; gap: 0;
   animation: marquee 40s linear infinite;
 }
 .marquee span {
