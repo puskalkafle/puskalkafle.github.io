@@ -140,7 +140,11 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .nav__toggle { display: flex; }
   .nav__time { display: none; }
   .nav__links {
-    position: fixed; inset: 0;
+    /* explicit geometry: .nav.scrolled's backdrop-filter turns .nav into the
+       containing block for fixed descendants, so inset: 0 would collapse the
+       overlay to the nav bar's box after scrolling */
+    position: fixed; top: 0; left: 0;
+    width: 100vw; height: 100vh; height: 100dvh;
     z-index: 1;
     flex-direction: column; justify-content: center; align-items: flex-start;
     gap: 8px;
