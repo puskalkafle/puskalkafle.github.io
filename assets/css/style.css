@@ -190,13 +190,20 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .section__title {
   font-family: var(--display); font-weight: 800;
-  font-size: clamp(2rem, 6vw, 5rem);
+  /* low floor: "COMPONENTS" in Syne overflows phones at a 2rem minimum */
+  font-size: clamp(1.25rem, 6vw, 5rem);
   letter-spacing: -0.03em; line-height: 1;
   text-transform: uppercase;
 }
 .section__count {
   font-size: 0.8125rem; color: var(--muted); letter-spacing: 0.14em;
   font-variant-numeric: tabular-nums;
+}
+@media (max-width: 600px) {
+  /* long counts ("01 product · 3 platforms") drop to their own line
+     instead of being crushed into a multi-line sliver */
+  .section__head { flex-wrap: wrap; }
+  .section__count { white-space: nowrap; }
 }
 .label {
   display: inline-block;
@@ -259,7 +266,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .hero__title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(2.375rem, 7.2vw, 8rem);
+  /* low floor: Syne is extra-wide — a bigger minimum clips "INTERFACES," on phones */
+  font-size: clamp(1.5rem, 7.2vw, 8rem);
   line-height: 0.96;
   letter-spacing: -0.035em;
   text-transform: uppercase;
@@ -288,7 +296,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 @media (max-width: 860px) {
   .hero__meta { flex-direction: column; align-items: flex-start; }
-  .hero__bottom span:nth-child(1) { display: none; }
+  .hero__bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
 
 /* --- worked-with logos -------------------------------------------------- */
@@ -405,6 +413,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .work-item a { grid-template-columns: auto 1fr auto; }
   .work-item__tags, .work-item__num { display: none; }
 }
+@media (max-width: 600px) {
+  /* the arrow is decorative (the row itself is the link); reclaiming its
+     column plus a vw-scaled size keeps one-word names like
+     "ProductImageUpscale" from clipping */
+  .work-item__arrow { display: none; }
+  .work-item__name { font-size: clamp(0.875rem, 4.5vw, 1.5rem); }
+}
 
 /* --- product spotlight --------------------------------------------------- */
 .product { background: var(--bg-soft); }
@@ -415,6 +430,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   line-height: 1.1; margin: 18px 0;
 }
 .product__intro h3 em { font-style: normal; color: var(--accent-soft); }
+@media (max-width: 355px) {
+  /* "ProductImageUpscale" is one unbreakable word — step down before it clips */
+  .product__intro h3 { font-size: 1.25rem; }
+}
 .product__intro p { color: var(--ink-body); font-size: clamp(0.9375rem, 1.4vw, 1.125rem); }
 .product__intro p strong { color: var(--ink); font-weight: 500; } /* Space Grotesk ships 400/500 only — avoids faux bold */
 
@@ -782,7 +801,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .crumb span[aria-current] { color: var(--ink); }
 .case-hero h1 {
   font-family: var(--display); font-weight: 800;
-  font-size: clamp(2.375rem, 8vw, 7.5rem);
+  /* low floor: "REDESIGN" in Syne clips small phones at a 2.375rem minimum */
+  font-size: clamp(2rem, 8vw, 7.5rem);
   line-height: 0.95; letter-spacing: -0.035em;
   text-transform: uppercase;
   max-width: 1200px;
@@ -879,6 +899,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   transition: color 0.4s;
 }
 .case-next:hover strong { color: var(--accent); }
+@media (max-width: 600px) {
+  /* fits "PRODUCTIMAGEUPSCALE" (with its &#8203; break hints) on phones */
+  .case-next strong { font-size: clamp(1.25rem, 6vw, 2.125rem); }
+}
 @media (max-width: 860px) {
   .case-grid { grid-template-columns: 1fr; }
   .case-grid h2 { position: static; }
