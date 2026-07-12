@@ -8,6 +8,7 @@
       nav.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
       document.body.style.overflow = open ? 'hidden' : '';
+      document.documentElement.style.overflow = open ? 'hidden' : '';
     };
     toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
     nav.querySelectorAll('.nav__links a').forEach((a) => {

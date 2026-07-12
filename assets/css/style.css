@@ -146,14 +146,21 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
     position: fixed; top: 0; left: 0;
     width: 100vw; height: 100vh; height: 100dvh;
     z-index: 1;
-    flex-direction: column; justify-content: center; align-items: flex-start;
+    flex-direction: column; justify-content: flex-start; align-items: flex-start;
     gap: 8px;
     padding: 100px var(--pad) 40px;
     background: var(--bg);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     opacity: 0; visibility: hidden;
     transition: opacity 0.3s var(--ease), visibility 0.3s;
   }
   .nav.open .nav__links { opacity: 1; visibility: visible; }
+  /* auto margins center the links when they fit, yet keep the first/last
+     reachable when the list overflows (justify-content: center would not) */
+  .nav__links a:first-child { margin-top: auto; }
+  .nav__links a:last-child { margin-bottom: auto; }
   .nav__links a {
     font-family: var(--display); font-weight: 700;
     font-size: clamp(1.75rem, 8vw, 2.75rem);
