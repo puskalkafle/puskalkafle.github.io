@@ -927,3 +927,42 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .clip-reveal img { transform: none; }
   html { scroll-behavior: auto; }
 }
+
+/* --- lazy image placeholders (shimmer + fade-in) ------------------------- */
+/* Container gets a shimmering placeholder until its media finishes loading. */
+.media-ph { position: relative; }
+.media-ph::before {
+  content: "";
+  position: absolute; inset: 0; z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(100deg, transparent 20%, rgba(255, 255, 255, 0.06) 50%, transparent 80%),
+    var(--bg-soft, #201e18);
+  background-size: 220% 100%, 100% 100%;
+  animation: ph-shimmer 1.5s ease-in-out infinite;
+  transition: opacity 0.5s var(--ease);
+}
+.media-ph.is-loaded::before { opacity: 0; animation: none; }
+@keyframes ph-shimmer {
+  0%   { background-position: 160% 0, 0 0; }
+  100% { background-position: -160% 0, 0 0; }
+}
+
+/* The image/video itself fades in once decoded (only when JS is active, so a
+   scripting failure never leaves images invisible). */
+.js .ph { opacity: 0; transition: opacity 0.6s var(--ease); }
+.js .ph.is-loaded { opacity: 1; }
+
+/* animated GIFs are now looping <video> — mirror the archive-card img styling */
+.archive-card figure video {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: grayscale(0.9) contrast(1.02);
+  transform: scale(1.01);
+  transition: filter 0.6s var(--ease), transform 0.8s var(--ease);
+}
+.archive-card:hover video { filter: grayscale(0); transform: scale(1.06); }
+
+@media (prefers-reduced-motion: reduce) {
+  .media-ph::before { animation: none; }
+  .js .ph { transition: none; }
+}

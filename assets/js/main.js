@@ -1,4 +1,22 @@
 /* Puskal Kafle — Portfolio 2026 */
+document.documentElement.classList.add('js');
+
+(() => {
+  /* ---------- lazy media: fade in + clear placeholder on load ---------- */
+  document.querySelectorAll('.ph').forEach((el) => {
+    const isVideo = el.tagName === 'VIDEO';
+    const done = () => {
+      el.classList.add('is-loaded');
+      const box = el.closest('.media-ph');
+      if (box) box.classList.add('is-loaded');
+    };
+    const ready = isVideo ? el.readyState >= 2 : el.complete && el.naturalWidth > 0;
+    if (ready) { done(); return; }
+    el.addEventListener(isVideo ? 'loadeddata' : 'load', done, { once: true });
+    el.addEventListener('error', done, { once: true });
+  });
+})();
+
 (() => {
   /* ---------- mobile menu ---------- */
   const nav = document.querySelector('.nav');
