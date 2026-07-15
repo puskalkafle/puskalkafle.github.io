@@ -12,6 +12,7 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canvas = document.createElement('canvas');
   canvas.className = 'hero__gl';
+  canvas.setAttribute('aria-hidden', 'true'); /* decorative background — hide from AT */
   const gl = canvas.getContext('webgl', {
     alpha: true, antialias: false, premultipliedAlpha: false,
     powerPreference: 'low-power',

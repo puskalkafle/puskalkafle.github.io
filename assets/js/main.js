@@ -25,6 +25,7 @@ document.documentElement.classList.add('js');
     const setOpen = (open) => {
       nav.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       document.body.style.overflow = open ? 'hidden' : '';
       document.documentElement.style.overflow = open ? 'hidden' : '';
     };
@@ -33,7 +34,10 @@ document.documentElement.classList.add('js');
       a.addEventListener('click', () => setOpen(false));
     });
     addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        setOpen(false);
+        toggle.focus(); /* return focus to the trigger, not lost to <body> */
+      }
     });
   }
 
@@ -81,7 +85,9 @@ document.documentElement.classList.add('js');
       pos = Math.max(2, Math.min(98, p));
       afterWrap.style.clipPath = `inset(0 0 0 ${pos}%)`;
       handle.style.left = `${pos}%`;
-      compare.setAttribute('aria-valuenow', Math.round(pos));
+      const rounded = Math.round(pos);
+      compare.setAttribute('aria-valuenow', rounded);
+      compare.setAttribute('aria-valuetext', `Enhanced image ${rounded}% revealed`);
     };
     const setFromX = (clientX) => {
       const r = compare.getBoundingClientRect();
@@ -116,6 +122,16 @@ document.documentElement.classList.add('js');
     });
     addEventListener('pointerup', () => { isDown = false; rail.classList.remove('dragging'); });
     rail.addEventListener('click', (e) => { if (moved) e.preventDefault(); }, true);
+
+    /* keyboard: the rail is focusable (tabindex=0) so keyboard-only users can
+       reach and scroll it — horizontal arrow scrolling isn't reliable natively */
+    rail.addEventListener('keydown', (e) => {
+      const step = rail.clientWidth * 0.8;
+      if (e.key === 'ArrowRight') { e.preventDefault(); rail.scrollBy({ left: step, behavior: 'smooth' }); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); rail.scrollBy({ left: -step, behavior: 'smooth' }); }
+      else if (e.key === 'Home') { e.preventDefault(); rail.scrollTo({ left: 0, behavior: 'smooth' }); }
+      else if (e.key === 'End') { e.preventDefault(); rail.scrollTo({ left: rail.scrollWidth, behavior: 'smooth' }); }
+    });
   }
 
   /* ---------- archive: filter chips ---------- */
@@ -132,6 +148,20 @@ document.documentElement.classList.add('js');
         });
         rail.scrollLeft = 0;
       });
+    });
+  }
+
+  /* ---------- reduced motion: freeze autoplaying archive videos ----------
+     CSS can't halt <video> playback, so honor prefers-reduced-motion here.
+     Autoplay is kept so the first frame still loads and paints (and the
+     placeholder fade clears), but we stop looping and freeze on frame 0 —
+     a still image, no ongoing motion. (WCAG 2.2.2 / 2.3.3) */
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach((v) => {
+      v.loop = false;
+      const freeze = () => { try { v.pause(); v.currentTime = 0; } catch (e) { /* not seekable yet */ } };
+      if (v.readyState >= 2) freeze();
+      v.addEventListener('loadeddata', freeze, { once: true });
     });
   }
 })();
