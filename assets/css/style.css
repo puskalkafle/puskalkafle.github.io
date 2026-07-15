@@ -581,7 +581,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .comp-item__type { font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .comp-item a:hover .comp-item__type { color: inherit; }
-.components__foot { margin-top: 36px; display: flex; justify-content: center; }
+.components__foot { margin-top: 36px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
 
 /* big pill button */
 .btn-pill {
@@ -825,6 +825,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   max-width: 1200px;
 }
 .case-hero h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--ink); }
+.case-hero__cta { margin-top: clamp(28px, 5vh, 48px); }
 .case-meta {
   display: flex; flex-wrap: wrap; gap: clamp(24px, 6vw, 80px);
   margin-top: clamp(28px, 5vh, 56px);
