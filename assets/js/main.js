@@ -186,3 +186,44 @@ document.documentElement.classList.add('js');
   }, { rootMargin: '600px' });
   io.observe(fig);
 })();
+
+(() => {
+  /* ---------- certificate lightbox ---------- */
+  const box = document.getElementById('cert-lightbox');
+  const triggers = document.querySelectorAll('.cert__view');
+  if (!box || !triggers.length) return;
+
+  const img = box.querySelector('.lightbox__img');
+  const closeBtn = box.querySelector('.lightbox__close');
+  let lastFocused = null;
+
+  const open = (trigger) => {
+    lastFocused = trigger;
+    img.src = trigger.dataset.cert;
+    img.alt = trigger.dataset.certAlt || '';
+    box.hidden = false;
+    /* next frame so the display:none → grid switch can transition opacity */
+    requestAnimationFrame(() => box.classList.add('is-open'));
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  };
+
+  const close = () => {
+    box.classList.remove('is-open');
+    document.body.style.overflow = '';
+    const hide = () => { box.hidden = true; img.src = ''; };
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) hide();
+    else box.addEventListener('transitionend', hide, { once: true });
+    if (lastFocused) lastFocused.focus();
+  };
+
+  triggers.forEach((t) => t.addEventListener('click', () => open(t)));
+  closeBtn.addEventListener('click', close);
+  box.addEventListener('click', (e) => { if (e.target === box) close(); });
+  addEventListener('keydown', (e) => {
+    if (box.hidden) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); }
+    /* only the close button is focusable inside — keep Tab on it */
+    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  });
+})();
