@@ -96,7 +96,7 @@
       vAlpha = mix(0.34, 0.6, t) * mix(1.0, 1.35, uWide) * edge * light * (1.0 + force * 1.4);
 
       float snow = smoothstep(0.7, 1.1, h);
-      vColor = mix(vec3(0.91, 0.90, 0.86), vec3(0.83, 0.93, 0.32), max(snow * 0.7, force * 0.5));
+      vColor = mix(vec3(0.95, 0.94, 0.91), vec3(1.00, 0.62, 0.18), max(snow * 0.7, force * 0.5));
 
       gl_Position = vec4(blown, 0.0, 1.0);
       gl_PointSize = mix(1.5, 2.8, t) * uDpr;
@@ -124,7 +124,7 @@
       pos += uPar * 0.03;                                     /* massif-depth parallax */
 
       vAlpha = smoothstep(0.0, 0.12, life) * (1.0 - life) * mix(0.25, 0.55, aSeed.y);
-      vColor = mix(vec3(0.95, 0.94, 0.90), vec3(0.83, 0.93, 0.32), aSeed.x * 0.35);
+      vColor = mix(vec3(0.97, 0.96, 0.94), vec3(1.00, 0.62, 0.18), aSeed.x * 0.35);
       gl_Position = vec4(pos, 0.0, 1.0);
       gl_PointSize = mix(1.2, 2.6, aSeed.y) * (1.0 - life * 0.45) * uDpr;
     }`;
