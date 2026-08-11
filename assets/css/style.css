@@ -15,7 +15,7 @@
   --accent: #ff9d2e;
   --accent-soft: #d88931;
   --accent-ink: #190f03;
-  --display: 'Lexend', 'Trebuchet MS', Verdana, sans-serif;
+  --display: 'Zilla Slab', Georgia, serif;
   --body: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
   --pad: clamp(20px, 4vw, 64px);
   --ease: cubic-bezier(0.65, 0.05, 0, 1);
@@ -110,8 +110,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   border-bottom-color: var(--line);
 }
 .nav__logo {
-  font-family: var(--display); font-weight: 800;
-  font-size: 1.25rem; letter-spacing: -0.02em;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1.25rem; letter-spacing: 0.02em;
   position: relative; z-index: 2;
 }
 .nav__logo sup { color: var(--accent-soft); font-size: 0.75rem; }
@@ -174,7 +174,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .nav__links a {
     font-family: var(--display); font-weight: 700;
     font-size: clamp(1.75rem, 8vw, 2.75rem);
-    text-transform: none; letter-spacing: -0.02em;
+    text-transform: none; letter-spacing: 0.02em;
     padding: 6px 0;
     opacity: 0; transform: translateY(14px);
     transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
@@ -201,10 +201,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-bottom: clamp(36px, 6vh, 72px);
 }
 .section__title {
-  font-family: var(--display); font-weight: 800;
+  font-family: var(--display); font-weight: 700;
   /* low floor: "COMPONENTS" in Syne overflows phones at a 2rem minimum */
   font-size: clamp(1.25rem, 6vw, 5rem);
-  letter-spacing: -0.03em; line-height: 1;
+  letter-spacing: 0; line-height: 1;
   text-transform: uppercase;
 }
 .section__count {
@@ -284,11 +284,11 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 @keyframes pulse { 50% { opacity: 0.3; } }
 .hero__title {
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   /* low floor: Syne is extra-wide — a bigger minimum clips "INTERFACES," on phones */
   font-size: clamp(1.5rem, 7.2vw, 8rem);
   line-height: 0.96;
-  letter-spacing: -0.035em;
+  letter-spacing: 0;
   text-transform: uppercase;
   max-width: 1300px;
 }
@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .work-item__name {
   font-family: var(--display); font-weight: 700;
   font-size: clamp(1.5rem, 4.2vw, 3.375rem);
-  letter-spacing: -0.02em; line-height: 1.05;
+  letter-spacing: 0.02em; line-height: 1.05;
   transition: color 0.4s;
 }
 .work-item a:hover .work-item__name { color: var(--accent); }
@@ -445,7 +445,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .product__intro { max-width: 760px; margin-bottom: clamp(36px, 7vh, 80px); }
 .product__intro h3 {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(1.625rem, 4vw, 3rem); letter-spacing: -0.02em;
+  font-size: clamp(1.625rem, 4vw, 3rem); letter-spacing: 0.02em;
   line-height: 1.1; margin: 18px 0;
 }
 .product__intro h3 em { font-style: normal; color: var(--accent-soft); }
@@ -524,7 +524,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .eco-card__plat { font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-soft); }
 .eco-card h4 {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(1.25rem, 1.9vw, 1.625rem); letter-spacing: -0.01em; line-height: 1.15;
+  font-size: clamp(1.25rem, 1.9vw, 1.625rem); letter-spacing: 0.02em; line-height: 1.15;
 }
 .eco-card p { color: var(--ink-body); font-size: 0.9375rem; flex: 1; }
 .eco-card__cta {
@@ -539,8 +539,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .stat b {
   display: block;
-  font-family: var(--display); font-weight: 800;
-  font-size: clamp(2.125rem, 5vw, 4rem); letter-spacing: -0.02em;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.125rem, 5vw, 4rem); letter-spacing: 0;
   color: var(--ink); line-height: 1;
   /* optical alignment: Syne digits carry ~0.03em left side bearing */
   margin-left: -0.035em;
@@ -579,7 +579,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .comp-item a:hover .comp-item__num { color: inherit; }
 .comp-item__name {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(1.25rem, 3.4vw, 2.5rem); letter-spacing: -0.015em;
+  font-size: clamp(1.25rem, 3.4vw, 2.5rem); letter-spacing: 0.02em;
 }
 .comp-item__type { font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .comp-item a:hover .comp-item__type { color: inherit; }
@@ -704,7 +704,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .about__body p.lead {
   font-family: var(--display); font-weight: 700;
   font-size: clamp(1.375rem, 2.8vw, 2.25rem);
-  line-height: 1.25; letter-spacing: -0.01em;
+  line-height: 1.25; letter-spacing: 0.02em;
   margin-bottom: 28px;
 }
 .about__body p.lead em { font-style: normal; color: var(--accent-soft); }
@@ -743,7 +743,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .reco:hover { border-color: var(--accent-soft); transform: translateY(-4px); }
 .reco__mark {
-  font-family: var(--display); font-weight: 800;
+  font-family: var(--display); font-weight: 700;
   font-size: 3.75rem; line-height: 0.6;
   color: var(--accent-soft); opacity: 0.35;
   height: 0.44em; margin-bottom: 6px;
@@ -752,7 +752,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .reco__quote p {
   font-size: clamp(1rem, 1.3vw, 1.1875rem);
   line-height: 1.5; color: var(--ink);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 .reco__by {
   display: flex; align-items: center; gap: 13px;
@@ -839,7 +839,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .cert__name {
   font-family: var(--display); font-weight: 700;
   font-size: 1rem;
-  line-height: 1.2; letter-spacing: -0.01em;
+  line-height: 1.2; letter-spacing: 0;
   color: var(--ink);
 }
 .cert__foot {
@@ -919,9 +919,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .footer__mail {
   display: block;
-  font-family: var(--display); font-weight: 800;
+  font-family: var(--display); font-weight: 700;
   font-size: clamp(2.5rem, 9.5vw, 9.375rem);
-  letter-spacing: -0.04em; line-height: 0.95;
+  letter-spacing: 0; line-height: 0.95;
   text-transform: uppercase;
   margin-bottom: clamp(40px, 8vh, 90px);
 }
@@ -974,10 +974,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .crumb a:hover { color: var(--accent-soft); }
 .crumb span[aria-current] { color: var(--ink); }
 .case-hero h1 {
-  font-family: var(--display); font-weight: 800;
+  font-family: var(--display); font-weight: 700;
   /* low floor: "REDESIGN" in Syne clips small phones at a 2.375rem minimum */
   font-size: clamp(2rem, 8vw, 7.5rem);
-  line-height: 0.95; letter-spacing: -0.035em;
+  line-height: 0.95; letter-spacing: 0;
   text-transform: uppercase;
   max-width: 1200px;
 }
@@ -1006,7 +1006,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .case-grid h2 {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(1.375rem, 2.6vw, 2.125rem); letter-spacing: -0.01em;
+  font-size: clamp(1.375rem, 2.6vw, 2.125rem); letter-spacing: 0.02em;
   position: sticky; top: 100px;
 }
 .case-grid h2 small {
@@ -1068,9 +1068,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-bottom: 16px;
 }
 .case-next strong {
-  font-family: var(--display); font-weight: 800;
+  font-family: var(--display); font-weight: 700;
   font-size: clamp(2.125rem, 7vw, 6rem);
-  letter-spacing: -0.03em; text-transform: uppercase; line-height: 1;
+  letter-spacing: 0; text-transform: uppercase; line-height: 1;
   transition: color 0.4s;
 }
 .case-next:hover strong { color: var(--accent); }
