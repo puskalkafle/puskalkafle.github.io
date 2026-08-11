@@ -4,19 +4,19 @@
    ============================================================ */
 
 :root {
-  /* lifted warm dark — layered surfaces instead of a flat void */
-  --bg: #181712;
-  --bg-soft: #201f18;
-  --surface: #26241c;
-  --ink: #ece9e2;
-  --ink-body: #c9c5b9;
-  --muted: #9b9787;
-  --line: rgba(236, 233, 226, 0.12);
-  --accent: #d4ec52;
-  --accent-soft: #b3bf69;
-  --accent-ink: #101206;
-  --display: 'Syne', 'Trebuchet MS', Verdana, sans-serif;
-  --body: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  /* lifted warm dark — Kathmandu Saffron accents */
+  --bg: #1a1815;
+  --bg-soft: #23201b;
+  --surface: #2b2821;
+  --ink: #f2efe9;
+  --ink-body: #cec9bd;
+  --muted: #a19d8e;
+  --line: rgba(242, 239, 233, 0.1);
+  --accent: #ff9d2e;
+  --accent-soft: #d88931;
+  --accent-ink: #190f03;
+  --display: 'Lexend', 'Trebuchet MS', Verdana, sans-serif;
+  --body: 'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif;
   --pad: clamp(20px, 4vw, 64px);
   --ease: cubic-bezier(0.65, 0.05, 0, 1);
 }
@@ -271,7 +271,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   color: var(--muted);
   max-width: 1500px;
 }
-.hero__meta strong { color: var(--ink); font-weight: 500; }
+.hero__meta strong { color: var(--ink); font-weight: 700; }
 .hero__status {
   display: inline-flex; align-items: center; gap: 10px;
   font-size: 0.8125rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -300,7 +300,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   color: var(--ink-body);
   max-width: 720px;
 }
-.hero__proof b { color: var(--ink); font-weight: 500; }
+.hero__proof b { color: var(--ink); font-weight: 700; }
 .hero__cta {
   display: flex; flex-wrap: wrap; gap: 14px;
   margin-top: clamp(22px, 4vh, 40px);
@@ -338,7 +338,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   filter: grayscale(1) invert(1) opacity(0.75);
   transition: filter 0.45s var(--ease);
 }
-.logos img:hover { filter: none; }
+.logos img:hover { filter: grayscale(1) invert(1) opacity(1); }
 @media (max-width: 700px) {
   .logos { flex-direction: column; align-items: flex-start; }
   .logos img { max-width: 100%; height: auto; }
@@ -374,7 +374,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .work-item a {
   display: grid;
-  grid-template-columns: auto auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
   gap: clamp(16px, 3vw, 48px);
   padding: clamp(24px, 4.5vh, 48px) 8px;
@@ -429,7 +429,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   transform: translateX(4px);
 }
 @media (max-width: 860px) {
-  .work-item a { grid-template-columns: auto 1fr auto; }
+  .work-item a { grid-template-columns: 1fr auto; }
   .work-item__tags, .work-item__num { display: none; }
 }
 @media (max-width: 600px) {
@@ -454,7 +454,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .product__intro h3 { font-size: 1.25rem; }
 }
 .product__intro p { color: var(--ink-body); font-size: clamp(0.9375rem, 1.4vw, 1.125rem); }
-.product__intro p strong { color: var(--ink); font-weight: 500; } /* Space Grotesk ships 400/500 only — avoids faux bold */
+.product__intro p strong { color: var(--ink); font-weight: 700; }
 
 .compare {
   position: relative;
@@ -557,7 +557,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .comp-item { border-bottom: 1px solid var(--line); }
 .comp-item a {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: 1fr auto auto;
   gap: clamp(16px, 3vw, 40px);
   align-items: center;
   padding: clamp(18px, 3vh, 30px) 8px;
@@ -771,7 +771,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .reco__avatar--img { filter: grayscale(1); transition: filter 0.4s var(--ease); }
 .reco:hover .reco__avatar--img { filter: grayscale(0); }
 .reco__id { display: flex; flex-direction: column; line-height: 1.35; }
-.reco__id b { font-weight: 500; color: var(--ink); font-size: 0.9375rem; }
+.reco__id b { font-weight: 700; color: var(--ink); font-size: 0.9375rem; }
 .reco__id i { font-style: normal; color: var(--muted); font-size: 0.8125rem; }
 .reco__foot { margin-top: clamp(28px, 4vh, 44px); }
 @media (max-width: 720px) {
@@ -938,7 +938,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .footer__col-title {
   font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase;
-  margin-bottom: 12px; color: var(--ink); font-weight: 500;
+  margin-bottom: 12px; color: var(--ink); font-weight: 700;
 }
 .footer__col a { display: block; padding: 3px 0; transition: color 0.3s; }
 .footer__col a:hover { color: var(--accent-soft); }
@@ -1015,7 +1015,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   margin-bottom: 10px;
 }
 .case-body p { color: var(--ink-body); margin-bottom: 18px; max-width: 70ch; }
-.case-body p strong { color: var(--ink); font-weight: 500; }
+.case-body p strong { color: var(--ink); font-weight: 700; }
 .case-body ul { margin: 0 0 18px; }
 .case-body li {
   padding: 12px 0 12px 26px;
