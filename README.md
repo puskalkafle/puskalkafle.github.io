@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/puskalkafle/puskalkafle/main/assets/portrait-circle.png" alt="Puskal Kafle" width="130" />
+  <img src="https://raw.githubusercontent.com/puskalkafle/puskalkafle/main/assets/portrait.png" alt="Puskal Kafle" width="130" />
 
   # Puskal Kafle
 
