@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://puskalkafle.com.np/assets/img/projects/portrait-art.png" alt="Puskal Kafle Portrait" width="140" style="border-radius: 50%;" />
+  <img src="https://raw.githubusercontent.com/puskalkafle/puskalkafle/main/assets/portrait-circle.png" alt="Puskal Kafle" width="130" />
 
   # Puskal Kafle
 
