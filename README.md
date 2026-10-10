@@ -4,7 +4,7 @@
 
   # Puskal Kafle
 
-  ### **Senior Frontend Engineer · UX Engineer · Product Builder**
+  ### **AI Product Engineer · UX Engineer · Frontend Architect**
   📍 Kathmandu, Nepal &nbsp;|&nbsp; 🟢 *Open for Collaborations*
 
   <p align="center">
@@ -16,7 +16,7 @@
     <a href="mailto:puskal_kafle@yahoo.com"><img src="https://img.shields.io/badge/Email-puskal__kafle@yahoo.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   </p>
 
-  > *"I design interfaces, then build them: fast, accessible, and pixel-faithful."*
+  > *"Engineering AI products with high-craft design and zero friction."*
 
 </div>
 
@@ -24,7 +24,7 @@
 
 ## ⚡ Executive Summary
 
-I'm a **Senior Frontend Engineer & UX Engineer** with over 10 years of experience bridging the gap between product design and engineering. Currently at **[ITONICS](https://www.itonics-innovation.com/)**, I design and build responsive, accessible, and high-performance web applications using **Angular, TypeScript, and modern CSS architecture**.
+I'm an **AI Product Engineer & UX Engineer** with over 10 years of experience bridging the gap between product design, frontend systems, and AI integration. Currently at **[ITONICS](https://www.itonics-innovation.com/)**, I design and build responsive, accessible, and high-performance web applications using **Angular, TypeScript, and modern CSS architecture**.
 
 Beyond enterprise software, I build and ship my own digital products:
 - 🚀 **Founder & Creator** of **[ProductImageUpscale AI](https://www.productimageupscale.com/)** — an AI photo enhancer and upscaler shipped solo across the Web, Shopify App Store, and WordPress Plugin Directory.
@@ -130,10 +130,10 @@ Production-ready components designed and published for the Framer creator ecosys
 ## 💬 Kind Words
 
 > *"I had the pleasure of working with Puskal at ITONICS on the CLOUD project. I wholeheartedly recommend him as an exceptional team player. His open communication style and willingness to lend a helping hand make him an invaluable asset to any collaborative effort."*  
-> — **Shishir Dhakal**, *Data Automation & QA Team Lead · DataBytes*
+> — **Shishir Dhakal**, *Software QA Engineer · SaaS & Test Automation*
 
 > *"He is a highly skilled UI developer and a team player… uses CSS and modern JavaScript frameworks at its best practices."*  
-> — **Anooz Prasai**, *Full Stack Developer · eDriving®*
+> — **Anooz Prasai**, *Software Engineer · SCF Supply Chain Factory GmbH*
 
 ---
 
